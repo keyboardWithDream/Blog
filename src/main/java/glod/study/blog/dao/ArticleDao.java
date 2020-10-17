@@ -19,4 +19,12 @@ public interface ArticleDao {
      */
     @Select("select * from article")
     List<Article> selectAllArticles();
+
+    /**
+     * 通过用户id查询文章
+     * @param userId 用户id
+     * @return 文章信息
+     */
+    @Select("select * from article where id = #{userId}")
+    List<Article> selectArticleByUserId(String userId);
 }

@@ -27,4 +27,15 @@ public class ArticleDaoTest {
             System.out.println(article);
         }
     }
+
+    /**
+     * 通过用户id查询文章
+     */
+    @Test
+    public void testSelectArticleByUserId(){
+        List<Article> articleList = articleDao.selectArticleByUserId("1");
+        for (Article article : articleList) {
+            System.out.println(article);
+        }
+    }
 }

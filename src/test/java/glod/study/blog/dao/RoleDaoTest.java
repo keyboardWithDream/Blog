@@ -19,7 +19,7 @@ public class RoleDaoTest {
 
     @Test
     public void testSelectRoleByUserInfoId(){
-        List<Role> roles = roleDao.selectRoleByUserInfoId("0");
+        List<Role> roles = roleDao.selectRoleByUserId("0");
         for (Role role : roles) {
             System.out.println(role);
         }

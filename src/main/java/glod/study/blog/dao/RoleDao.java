@@ -15,9 +15,9 @@ public interface RoleDao {
 
     /**
      * 通过用户id查询角色
-     * @param id 用户id
+     * @param userId 用户id
      * @return 角色信息
      */
-    @Select("select * from roles where id in (select role_id from user_role where user_id = #{id})")
-    List<Role> selectRoleByUserInfoId(String id);
+    @Select("select * from roles where id in (select role_id from user_role where user_id = #{userId})")
+    List<Role> selectRoleByUserId(String userId);
 }

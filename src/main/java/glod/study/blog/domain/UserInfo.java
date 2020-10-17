@@ -25,6 +25,7 @@ public class UserInfo implements Serializable {
     private Integer age;
     private String nikeName;
     private List<Role> roleList;
+    private List<Article> articleList;
 
     public List<Role> getRoleList() {
         return roleList;
@@ -114,6 +115,14 @@ public class UserInfo implements Serializable {
         this.nikeName = nikeName;
     }
 
+    public List<Article> getArticleList() {
+        return articleList;
+    }
+
+    public void setArticleList(List<Article> articleList) {
+        this.articleList = articleList;
+    }
+
     @Override
     public String toString() {
         return "UserInfo{" +
@@ -128,6 +137,7 @@ public class UserInfo implements Serializable {
                 ", age=" + age +
                 ", nikeName='" + nikeName + '\'' +
                 ", roleList=" + roleList +
+                ", articleList=" + articleList +
                 '}';
     }
 }

@@ -44,7 +44,7 @@ public class UserInfoDaoTest {
 
     @Test
     public void testSelectUserInfoByUsername(){
-        UserInfo userInfo = userInfoDao.selectUserInfoByUsername("admin");
+        UserInfo userInfo = userInfoDao.selectUserInfoByUsername("test");
         System.out.println(userInfo);
     }
 }

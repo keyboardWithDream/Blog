@@ -46,9 +46,9 @@ public interface UserInfoDao {
     void insertUserInfoAndRole(@Param("userId") String userId, @Param("roleId") String roleId);
 
     /**
-     * 通过
-     * @param username
-     * @return
+     * 通过用户名查询用户信息
+     * @param username 用户名
+     * @return 用户信息
      */
     @Select("select * from userinfo where username = #{username}")
     @Results({
@@ -61,7 +61,8 @@ public interface UserInfoDao {
             @Result(property = "birthday", column = "birthday"),
             @Result(property = "registrationTime", column = "registration_time"),
             @Result(property = "nikeName", column = "nike_name"),
-            @Result(property = "roleList", column = "id", javaType = List.class, many = @Many(select = "glod.study.blog.dao.RoleDao.selectRoleByUserInfoId"))
+            @Result(property = "roleList", column = "id", javaType = List.class, many = @Many(select = "glod.study.blog.dao.RoleDao.selectRoleByUserId")),
+            @Result(property = "articleList", column = "id", javaType = List.class, many = @Many(select = "glod.study.blog.dao.ArticleDao.selectArticleByUserId"))
     })
     UserInfo selectUserInfoByUsername(String username);
 }
