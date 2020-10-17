@@ -4,6 +4,7 @@ import glod.study.blog.dao.UserInfoDao;
 import glod.study.blog.domain.Role;
 import glod.study.blog.domain.UserInfo;
 import glod.study.blog.service.UserInfoService;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -27,6 +28,8 @@ public class UserInfoServiceImpl implements UserInfoService {
 
     @Autowired
     private UserInfoDao userInfoDao;
+    @Autowired
+    RabbitTemplate rabbitTemplate;
 
     /**
      * 用户注册
@@ -39,18 +42,27 @@ public class UserInfoServiceImpl implements UserInfoService {
         Date registrationTime = new Date();
         String defaultPhoto = "default";
         Date birthday = userInfo.getBirthday();
+        //计算用户年龄
         int age;
         if (birthday.getMonth() - registrationTime.getMonth() > 0 && birthday.getDay() - registrationTime.getDay() > 0){
             age = registrationTime.getYear() - birthday.getYear() - 1;
         }else {
             age = registrationTime.getYear() - birthday.getYear();
         }
-        userInfo.setId(uuid);
-        userInfo.setRegistrationTime(registrationTime);
-        userInfo.setProfilePhoto(defaultPhoto);
         userInfo.setAge(age);
+        //设置用户id(UUID)
+        userInfo.setId(uuid);
+        //设置注册时间
+        userInfo.setRegistrationTime(registrationTime);
+        //设置默认头像
+        userInfo.setProfilePhoto(defaultPhoto);
+        //添加用户信息
         userInfoDao.insertUserInfo(userInfo);
+        //为用户添加游客角色
         userInfoDao.insertUserInfoAndRole(userInfo.getId(), "1");
+        //发送注册邮件
+        rabbitTemplate.convertAndSend("amq.direct", userInfo.getEmail());
+
     }
 
     @Override

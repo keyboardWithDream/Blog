@@ -33,6 +33,14 @@ spring:
       useGlobalDataSourceStat: true
       connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
 
+  # 配置RabbitMQ
+  rabbitmq:
+    host: 192.168.154.128
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+
   # 关闭thymeleaf缓存
   thymeleaf:
     cache: false
