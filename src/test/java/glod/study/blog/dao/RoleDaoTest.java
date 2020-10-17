@@ -12,13 +12,13 @@ import java.util.List;
  * @Date 2020/10/16
  */
 @SpringBootTest
-public class TestRoleDao {
+public class RoleDaoTest {
 
     @Autowired
     private RoleDao roleDao;
 
     @Test
-    public void test(){
+    public void testSelectRoleByUserInfoId(){
         List<Role> roles = roleDao.selectRoleByUserInfoId("0");
         for (Role role : roles) {
             System.out.println(role);
