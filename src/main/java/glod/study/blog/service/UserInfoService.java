@@ -12,9 +12,10 @@ public interface UserInfoService extends UserDetailsService {
     /**
      * 保存用户信息
      * @param userInfo 用户信息
+     * @return 用户信息
      * @throws Exception 异常
      */
-    void insertUserInfo(UserInfo userInfo) throws Exception;
+    UserInfo insertUserInfo(UserInfo userInfo) throws Exception;
 
 
     /**

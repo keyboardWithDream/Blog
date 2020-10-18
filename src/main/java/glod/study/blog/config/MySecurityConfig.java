@@ -27,11 +27,13 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests().antMatchers( "/userInfo/registered", "/userInfo/login", "/userInfo/failLogin").permitAll()
-        .antMatchers("/info").hasAnyRole("ADMIN","TOURIST", "USER");
+        .antMatchers("/info").hasAnyRole("ADMIN", "USER");
+        
         //关闭跨域请求保护
         http.csrf().disable();
         //判断重复登录
         http.sessionManagement().maximumSessions(1);
+        //指定登录成功及失败的跳转
         http.formLogin().loginPage("/login")
                 .loginProcessingUrl("/login")
                 .successForwardUrl("/userInfo/info")

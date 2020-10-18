@@ -4,6 +4,7 @@ server:
   servlet:
     context-path: /
 
+
 # Spring配置
 spring:
   # 配置数据源
@@ -52,7 +53,7 @@ spring:
   mail:
     host: smtp.163.com
     username: i102443@163.com
-    password: ROCBSSQMYLZBPXZP
+    password: RBSRPAGBZYUODXTG
     properties:
       mail:
         smtp:

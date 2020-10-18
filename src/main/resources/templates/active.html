@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ch" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>激活您的电子邮箱</title>
+</head>
+<body>
+<h1>请激活您的电子邮箱</h1>
+<h2>欢迎您注册1024.glod</h2>
+<p>请登录您的邮箱: <a th:href="${email}" th:text="${email}"></a>，激活您的邮件。</p>
+<p>如需更换邮箱请点击：<a href="#">更换邮箱</a>，进行更换！</p>
+<a th:href="@{/userInfo/login}">登录</a>
+</body>
+</html>

@@ -10,6 +10,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -30,6 +31,8 @@ public class UserInfoServiceImpl implements UserInfoService {
     private UserInfoDao userInfoDao;
     @Autowired
     RabbitTemplate rabbitTemplate;
+    @Autowired
+    BCryptPasswordEncoder passwordEncoder;
 
     /**
      * 用户注册
@@ -37,12 +40,18 @@ public class UserInfoServiceImpl implements UserInfoService {
      * @throws Exception 异常
      */
     @Override
-    public void insertUserInfo(UserInfo userInfo) throws Exception {
+    public UserInfo insertUserInfo(UserInfo userInfo) throws Exception {
+        //设置用户id(UUID)
         String uuid = UUID.randomUUID().toString().replace("-", "");
+        userInfo.setId(uuid);
+        //用户密码加密
+        String password = userInfo.getPassword();
+        userInfo.setPassword(passwordEncoder.encode(password));
+        //设置注册时间
         Date registrationTime = new Date();
-        String defaultPhoto = "default";
-        Date birthday = userInfo.getBirthday();
+        userInfo.setRegistrationTime(registrationTime);
         //计算用户年龄
+        Date birthday = userInfo.getBirthday();
         int age;
         if (birthday.getMonth() - registrationTime.getMonth() > 0 && birthday.getDay() - registrationTime.getDay() > 0){
             age = registrationTime.getYear() - birthday.getYear() - 1;
@@ -50,19 +59,16 @@ public class UserInfoServiceImpl implements UserInfoService {
             age = registrationTime.getYear() - birthday.getYear();
         }
         userInfo.setAge(age);
-        //设置用户id(UUID)
-        userInfo.setId(uuid);
-        //设置注册时间
-        userInfo.setRegistrationTime(registrationTime);
         //设置默认头像
+        String defaultPhoto = "default";
         userInfo.setProfilePhoto(defaultPhoto);
         //添加用户信息
         userInfoDao.insertUserInfo(userInfo);
         //为用户添加游客角色
         userInfoDao.insertUserInfoAndRole(userInfo.getId(), "1");
         //发送注册邮件
-        rabbitTemplate.convertAndSend("amq.direct", userInfo.getEmail());
-
+        rabbitTemplate.convertAndSend("amq.direct","user.email", userInfo);
+        return userInfo;
     }
 
     @Override
@@ -84,7 +90,6 @@ public class UserInfoServiceImpl implements UserInfoService {
 
 
     public List<SimpleGrantedAuthority> getAuthority(List<Role> roleList){
-        System.out.println(roleList);
         List<SimpleGrantedAuthority> list = new ArrayList<>();
         for (Role role : roleList) {
             list.add(new SimpleGrantedAuthority("ROLE_" + role.getRole()));
