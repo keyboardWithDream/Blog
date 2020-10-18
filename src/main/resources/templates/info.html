@@ -6,5 +6,11 @@
 </head>
 <body>
 <p th:text="${#authorization.getAuthentication().getName()}"></p>
+<table>
+    <tr th:each="article:${articleList}">
+        <td th:text="${article.getTittle()}"></td>
+        <td th:text="${article.getContent()}"></td>
+    </tr>
+</table>
 </body>
 </html>

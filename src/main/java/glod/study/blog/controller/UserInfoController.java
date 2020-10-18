@@ -1,11 +1,14 @@
 package glod.study.blog.controller;
 
 import glod.study.blog.domain.UserInfo;
+import glod.study.blog.service.ArticleService;
 import glod.study.blog.service.UserInfoService;
 import glod.study.blog.service.impl.UserInfoServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.context.SecurityContext;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,6 +29,8 @@ public class UserInfoController {
 
     @Autowired
     private UserInfoService userInfoService;
+    @Autowired
+    private ArticleService articleService;
 
     /**
      * 用户注册
@@ -85,12 +90,18 @@ public class UserInfoController {
      * @return 信息页面
      */
     @RequestMapping("/info")
-    @PreAuthorize("hasRole({'ROLE_USER', 'ROLE_ADMIN'})")
+    @PreAuthorize("hasRole({'USER', 'ADMIN', 'TOURIST'})")
     public String transToInfo(Model model){
+        model.addAttribute("articleList", articleService.selectAllArticle());
         return "info";
     }
 
 
+    /**
+     * 账户激活
+     * @param id 用户id
+     * @return 激活成功页面
+     */
     @GetMapping("/active/{id}")
     @PermitAll
     public String activeUserInfo(@PathVariable("id") String id){

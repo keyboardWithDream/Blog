@@ -1,5 +1,6 @@
 package glod.study.blog.service.impl;
 
+import glod.study.blog.dao.ArticleDao;
 import glod.study.blog.dao.RoleDao;
 import glod.study.blog.dao.UserInfoDao;
 import glod.study.blog.domain.Role;
