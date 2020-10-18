@@ -1,5 +1,6 @@
 package glod.study.blog.service.impl;
 
+import glod.study.blog.dao.RoleDao;
 import glod.study.blog.dao.UserInfoDao;
 import glod.study.blog.domain.Role;
 import glod.study.blog.domain.UserInfo;
@@ -29,6 +30,8 @@ public class UserInfoServiceImpl implements UserInfoService {
 
     @Autowired
     private UserInfoDao userInfoDao;
+    @Autowired
+    private RoleDao roleDao;
     @Autowired
     RabbitTemplate rabbitTemplate;
     @Autowired
@@ -77,6 +80,18 @@ public class UserInfoServiceImpl implements UserInfoService {
     }
 
     @Override
+    public void activeUserInfo(String id) {
+        roleDao.updateRoleByUserId(id, "2");
+    }
+
+
+    /**
+     * 权限控制
+     * @param s 用户名
+     * @return 权限
+     * @throws UsernameNotFoundException 异常
+     */
+    @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
         UserInfo userInfo = null;
         try {
@@ -89,6 +104,11 @@ public class UserInfoServiceImpl implements UserInfoService {
     }
 
 
+    /**
+     * 获取用户权限
+     * @param roleList 权限列表
+     * @return 权限列表
+     */
     public List<SimpleGrantedAuthority> getAuthority(List<Role> roleList){
         List<SimpleGrantedAuthority> list = new ArrayList<>();
         for (Role role : roleList) {

@@ -65,4 +65,5 @@ public interface UserInfoDao {
             @Result(property = "articleList", column = "id", javaType = List.class, many = @Many(select = "glod.study.blog.dao.ArticleDao.selectArticleByUserId"))
     })
     UserInfo selectUserInfoByUsername(String username);
+
 }

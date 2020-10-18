@@ -25,5 +25,9 @@ public interface UserInfoService extends UserDetailsService {
      */
     UserInfo selectUserInfoByUsername(String username);
 
-
+    /**
+     * 通过id激活用户
+     * @param id 用户id
+     */
+    void activeUserInfo(String id);
 }

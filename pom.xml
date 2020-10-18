@@ -45,6 +45,13 @@
             <artifactId>thymeleaf-extras-springsecurity5</artifactId>
         </dependency>
 
+        <!-- SEL 表达式支持 -->
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>jsr250-api</artifactId>
+            <version>1.0</version>
+        </dependency>
+
         <!-- thymeleaf模板引擎 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -9,6 +9,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -87,5 +88,13 @@ public class UserInfoController {
     @PreAuthorize("hasRole({'ROLE_USER', 'ROLE_ADMIN'})")
     public String transToInfo(Model model){
         return "info";
+    }
+
+
+    @GetMapping("/active/{id}")
+    @PermitAll
+    public String activeUserInfo(@PathVariable("id") String id){
+        userInfoService.activeUserInfo(id);
+        return "active_success";
     }
 }

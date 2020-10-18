@@ -39,7 +39,7 @@ public class MailComponent {
         try {
             MimeMessageHelper messageHelper = new MimeMessageHelper(mimeMessage, false);
             messageHelper.setSubject("验证");
-            messageHelper.setText("用户名：" + userInfo.getUsername() + "验证链接：" , false);
+            messageHelper.setText("用户名：" + userInfo.getUsername() + "验证链接：<a href='http://localhost/userInfo/active/"+userInfo.getId()+">立即激活</a>'" , true);
             messageHelper.setTo(userInfo.getEmail());
             messageHelper.setFrom("i102443@163.com", "1024.glod博客");
             mailSender.send(mimeMessage);
