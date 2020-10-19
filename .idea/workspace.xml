@@ -22,9 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9229ff63-3063-44c1-bf3b-447100f84ee3" name="Default Changelist" comment="博文部分查询">
+    <list default="true" id="9229ff63-3063-44c1-bf3b-447100f84ee3" name="Default Changelist" comment="header抽取">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/sidebar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userInfo_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userInfo_info.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userInfo_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userInfo_login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system.log" beforeDir="false" afterPath="$PROJECT_DIR$/system.log" afterDir="false" />
@@ -41,8 +41,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -241,7 +241,7 @@
       <workItem from="1603078715118" duration="23958000" />
       <workItem from="1603114397500" duration="3896000" />
       <workItem from="1603118337398" duration="653000" />
-      <workItem from="1603119471534" duration="332000" />
+      <workItem from="1603119471534" duration="2266000" />
     </task>
     <task id="LOCAL-00001" summary="个人博客">
       <created>1602941695860</created>
@@ -327,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603118897048</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="header抽取">
+      <created>1603120038485</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1603120038485</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +366,8 @@
     <MESSAGE value="项目重构" />
     <MESSAGE value="更新页面" />
     <MESSAGE value="博文部分查询" />
-    <option name="LAST_COMMIT_MESSAGE" value="博文部分查询" />
+    <MESSAGE value="header抽取" />
+    <option name="LAST_COMMIT_MESSAGE" value="header抽取" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="158" width="1092" height="791" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602837799374">
@@ -378,38 +386,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="577" y="129" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602840719210" />
-    <state width="1559" height="433" key="GridCell.Tab.0.bottom" timestamp="1603118991447">
+    <state width="1559" height="199" key="GridCell.Tab.0.bottom" timestamp="1603121735148">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1559" height="433" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603118991447" />
-    <state width="1559" height="433" key="GridCell.Tab.0.center" timestamp="1603118991447">
+    <state width="1559" height="199" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603121735148" />
+    <state width="1559" height="199" key="GridCell.Tab.0.center" timestamp="1603121735148">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1559" height="433" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603118991447" />
-    <state width="1559" height="433" key="GridCell.Tab.0.left" timestamp="1603118991447">
+    <state width="1559" height="199" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603121735148" />
+    <state width="1559" height="199" key="GridCell.Tab.0.left" timestamp="1603121735148">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1559" height="433" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603118991447" />
-    <state width="1559" height="433" key="GridCell.Tab.0.right" timestamp="1603118991447">
+    <state width="1559" height="199" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603121735148" />
+    <state width="1559" height="199" key="GridCell.Tab.0.right" timestamp="1603121735148">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1559" height="433" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603118991447" />
-    <state width="1877" height="309" key="GridCell.Tab.1.bottom" timestamp="1603118307457">
+    <state width="1559" height="199" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603121735148" />
+    <state width="1559" height="199" key="GridCell.Tab.1.bottom" timestamp="1603121735149">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="309" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603118307457" />
-    <state width="1877" height="309" key="GridCell.Tab.1.center" timestamp="1603118307457">
+    <state width="1559" height="199" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603121735149" />
+    <state width="1559" height="199" key="GridCell.Tab.1.center" timestamp="1603121735149">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="309" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603118307457" />
-    <state width="1877" height="309" key="GridCell.Tab.1.left" timestamp="1603118307457">
+    <state width="1559" height="199" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603121735149" />
+    <state width="1559" height="199" key="GridCell.Tab.1.left" timestamp="1603121735148">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="309" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603118307457" />
-    <state width="1877" height="309" key="GridCell.Tab.1.right" timestamp="1603118307457">
+    <state width="1559" height="199" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603121735148" />
+    <state width="1559" height="199" key="GridCell.Tab.1.right" timestamp="1603121735149">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="309" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603118307457" />
+    <state width="1559" height="199" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603121735149" />
     <state x="518" y="298" key="Maven.ArtifactSearchDialog" timestamp="1603108639648">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -418,10 +426,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="182" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602817507387" />
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1603118898955">
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1603120039989">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603118898955" />
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603120039989" />
     <state x="1158" y="253" width="434" height="459" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1602943026989">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

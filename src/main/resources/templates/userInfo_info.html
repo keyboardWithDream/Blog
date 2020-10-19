@@ -6,7 +6,9 @@
     <link th:replace="common">
 </head>
 <body>
+<!-- header -->
 <div th:replace="header"></div>
+
 <p th:text="${#authorization.getAuthentication().getName()}"></p>
 <table>
     <tr th:each="article:${articleList}">
