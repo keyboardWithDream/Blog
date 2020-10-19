@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>1024.glod</title>
+        <title>1024.GLOD</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" th:href="@{/assets/img/favicon.ico}"/>
         <link th:replace="common">
         <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" th:src="@{webjars/fontawesome/5.6.3/generate.js}" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
@@ -18,15 +18,38 @@
         <link href="css/styles.css" rel="stylesheet" th:href="@{/css/styles.css}"/>
     </head>
     <body id="page-top">
-        <div th:replace="header"></div>
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" th:fragment="header">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/navbar-logo.svg" th:src="@{/assets/img/navbar-logo.svg}" alt="" /></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">介绍</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">展示</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">关于</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">团队</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">联系我们</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#" th:href="@{/login}">登录</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#" th:href="@{/signIn}">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Welcome To Our Studio!</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+                <div class="masthead-subheading">欢迎来到1024.glod</div>
+                <div class="masthead-heading text-uppercase">很高兴能够遇见你!</div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" th:href="@{/login}">立即开始</a>
             </div>
         </header>
+
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container">
