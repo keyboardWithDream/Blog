@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.annotation.security.PermitAll;
+import javax.annotation.security.RolesAllowed;
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -39,7 +40,7 @@ public class UserInfoController {
      * @return 返回主页
      * @throws Exception 异常
      */
-    @PostMapping("/registered")
+    @PostMapping("/signIn")
     @PermitAll
     public String registered(UserInfo userInfo, HttpServletRequest req, Model model) throws Exception {
         String ip = req.getRemoteAddr();
@@ -47,7 +48,7 @@ public class UserInfoController {
         UserInfo user = userInfoService.insertUserInfo(userInfo);
         model.addAttribute("email", user.getEmail());
         model.addAttribute("username", user.getUsername());
-        return "active";
+        return "userInfo_active";
     }
 
     /**
@@ -56,31 +57,10 @@ public class UserInfoController {
      * @return 登录页面
      */
     @RequestMapping("/failLogin")
-    @PermitAll
+
     public String failLogin(Model model){
         model.addAttribute("msg", "用户名或密码错误!");
-        return "login";
-    }
-
-    /**
-     * 跳转注册页面
-     * @return 注册
-     */
-    @GetMapping("/registered")
-    @PermitAll
-    public String transToRegistered(){
-        return "registered";
-    }
-
-
-    /**
-     * 跳转登录页面
-     * @return 登录
-     */
-    @GetMapping("/login")
-    @PermitAll
-    public String transToLogin(){
-        return "login";
+        return "userInfo_login";
     }
 
 
@@ -90,10 +70,10 @@ public class UserInfoController {
      * @return 信息页面
      */
     @RequestMapping("/info")
-    @PreAuthorize("hasRole({'USER', 'ADMIN', 'TOURIST'})")
+    @RolesAllowed({"USER", "ADMIN", "TOURIST"})
     public String transToInfo(Model model){
         model.addAttribute("articleList", articleService.selectAllArticle());
-        return "info";
+        return "userInfo_info";
     }
 
 
@@ -106,6 +86,6 @@ public class UserInfoController {
     @PermitAll
     public String activeUserInfo(@PathVariable("id") String id){
         userInfoService.activeUserInfo(id);
-        return "active_success";
+        return "userInfo_active_success";
     }
 }

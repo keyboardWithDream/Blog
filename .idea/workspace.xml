@@ -22,20 +22,56 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9229ff63-3063-44c1-bf3b-447100f84ee3" name="Default Changelist" comment="用户激活">
-      <change afterPath="$PROJECT_DIR$/src/main/java/glod/study/blog/service/ArticleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/glod/study/blog/service/impl/ArticleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common.html" afterDir="false" />
+    <list default="true" id="9229ff63-3063-44c1-bf3b-447100f84ee3" name="Default Changelist" comment="登录查看博客测试">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/about/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/about/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/about/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/about/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/close-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/header-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/logos/creative-market.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/logos/designmodo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/logos/envato.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/logos/themeforest.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/map-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/navbar-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/portfolio/01-full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/portfolio/01-thumbnail.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/portfolio/02-full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/portfolio/02-thumbnail.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/portfolio/03-full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/portfolio/03-thumbnail.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/portfolio/04-full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/portfolio/04-thumbnail.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/portfolio/05-full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/portfolio/05-thumbnail.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/portfolio/06-full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/portfolio/06-thumbnail.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/team/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/team/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/team/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/mail/contact_me.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/mail/contact_me.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/mail/jqBootstrapValidation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userInfo_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system.log.2020-10-18.0.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/blog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/glod/study/blog/component/MailComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/glod/study/blog/component/MailComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/glod/study/blog/BlogApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/glod/study/blog/BlogApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/glod/study/blog/config/MyMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/glod/study/blog/config/MyMvcConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/glod/study/blog/config/MySecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/glod/study/blog/config/MySecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/glod/study/blog/controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/glod/study/blog/controller/UserInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/glod/study/blog/service/UserInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/glod/study/blog/service/UserInfoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/glod/study/blog/service/impl/UserInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/glod/study/blog/service/impl/UserInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/active.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userInfo_active.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/active_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userInfo_active_success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/common.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userInfo_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userInfo_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registered.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userInfo_signIn.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system.log" beforeDir="false" afterPath="$PROJECT_DIR$/system.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,6 +126,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates/common" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -103,6 +140,18 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.scala.compiler.ScalaCompileServerForm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Code\blog\src\main\resources\templates\common" />
+      <recent name="D:\Code\blog\src\main\resources\templates" />
+      <recent name="D:\Code\blog\src\main\resources\templates\userInfo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code\blog\src\main\resources\templates\common" />
+      <recent name="D:\Code\blog\src\main\resources\templates" />
+      <recent name="D:\Code\blog\src\main\resources\static" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -123,7 +172,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArticleDaoTest.testSelectArticleByUserId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RoleDaoTest.testSelectRoleByUserInfoId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="blog" />
       <extension name="coverage">
         <pattern>
@@ -132,8 +181,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="glod.study.blog.dao" />
-      <option name="MAIN_CLASS_NAME" value="glod.study.blog.dao.ArticleDaoTest" />
-      <option name="METHOD_NAME" value="testSelectArticleByUserId" />
+      <option name="MAIN_CLASS_NAME" value="glod.study.blog.dao.RoleDaoTest" />
+      <option name="METHOD_NAME" value="testSelectRoleByUserInfoId" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -202,18 +251,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.UserInfoDaoTest.testSelectUserInfoByUsername" />
-      <item itemvalue="JUnit.ArticleDaoTest.testSelectArticleByUserId" />
       <item itemvalue="JUnit.UserInfoMessage.testSendEmail" />
       <item itemvalue="JUnit.UserInfoMessage.testReceive" />
       <item itemvalue="Spring Boot.BlogApplication" />
+      <item itemvalue="JUnit.RoleDaoTest.testSelectRoleByUserInfoId" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.BlogApplication" />
+        <item itemvalue="JUnit.RoleDaoTest.testSelectRoleByUserInfoId" />
         <item itemvalue="JUnit.UserInfoMessage.testSendEmail" />
         <item itemvalue="JUnit.UserInfoMessage.testReceive" />
         <item itemvalue="JUnit.UserInfoDaoTest.testSelectUserInfoByUsername" />
-        <item itemvalue="JUnit.ArticleDaoTest.testSelectArticleByUserId" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +283,9 @@
       <workItem from="1602941574335" duration="3946000" />
       <workItem from="1602946076881" duration="14731000" />
       <workItem from="1603000558827" duration="6297000" />
-      <workItem from="1603009572427" duration="8676000" />
+      <workItem from="1603009572427" duration="8747000" />
+      <workItem from="1603037641478" duration="4806000" />
+      <workItem from="1603078715118" duration="19805000" />
     </task>
     <task id="LOCAL-00001" summary="个人博客">
       <created>1602941695860</created>
@@ -292,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603006431976</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="登录查看博客测试">
+      <created>1603027951966</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603027951967</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,7 +378,8 @@
     <MESSAGE value="注册邮件发送测试" />
     <MESSAGE value="注册邮件发送" />
     <MESSAGE value="用户激活" />
-    <option name="LAST_COMMIT_MESSAGE" value="用户激活" />
+    <MESSAGE value="登录查看博客测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="登录查看博客测试" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="158" width="1092" height="791" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602837799374">
@@ -331,54 +390,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="973" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1602950824221" />
-    <state x="880" y="325" width="687" height="590" key="#com.intellij.ide.util.MemberChooser" timestamp="1603025739728">
+    <state x="880" y="325" width="687" height="590" key="#com.intellij.ide.util.MemberChooser" timestamp="1603093771363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="880" y="325" width="687" height="590" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603025739728" />
+    <state x="880" y="325" width="687" height="590" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603093771363" />
     <state x="577" y="129" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602840719210">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="577" y="129" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602840719210" />
-    <state width="1877" height="215" key="GridCell.Tab.0.bottom" timestamp="1603027743741">
+    <state width="1877" height="438" key="GridCell.Tab.0.bottom" timestamp="1603106145373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603027743741" />
-    <state width="1877" height="215" key="GridCell.Tab.0.center" timestamp="1603027743741">
+    <state width="1877" height="438" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603106145373" />
+    <state width="1877" height="438" key="GridCell.Tab.0.center" timestamp="1603106145373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="215" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603027743741" />
-    <state width="1877" height="215" key="GridCell.Tab.0.left" timestamp="1603027743740">
+    <state width="1877" height="438" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603106145373" />
+    <state width="1877" height="438" key="GridCell.Tab.0.left" timestamp="1603106145373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="215" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603027743740" />
-    <state width="1877" height="215" key="GridCell.Tab.0.right" timestamp="1603027743741">
+    <state width="1877" height="438" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603106145373" />
+    <state width="1877" height="438" key="GridCell.Tab.0.right" timestamp="1603106145373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="215" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603027743741" />
-    <state width="1877" height="215" key="GridCell.Tab.1.bottom" timestamp="1603027743742">
+    <state width="1877" height="438" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603106145373" />
+    <state width="1877" height="438" key="GridCell.Tab.1.bottom" timestamp="1603106145373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="215" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603027743742" />
-    <state width="1877" height="215" key="GridCell.Tab.1.center" timestamp="1603027743741">
+    <state width="1877" height="438" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603106145373" />
+    <state width="1877" height="438" key="GridCell.Tab.1.center" timestamp="1603106145373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="215" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603027743741" />
-    <state width="1877" height="215" key="GridCell.Tab.1.left" timestamp="1603027743741">
+    <state width="1877" height="438" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603106145373" />
+    <state width="1877" height="438" key="GridCell.Tab.1.left" timestamp="1603106145373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="215" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603027743741" />
-    <state width="1877" height="215" key="GridCell.Tab.1.right" timestamp="1603027743742">
+    <state width="1877" height="438" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603106145373" />
+    <state width="1877" height="438" key="GridCell.Tab.1.right" timestamp="1603106145373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="215" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603027743742" />
+    <state width="1877" height="438" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603106145373" />
     <state x="627" y="182" key="SettingsEditor" timestamp="1602817507387">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="182" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602817507387" />
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1603006433494">
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1603027954193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603006433494" />
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603027954193" />
     <state x="1158" y="253" width="434" height="459" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1602943026989">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -391,10 +450,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="200" y="394" width="884" height="601" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1602994199050" />
-    <state x="853" y="235" width="672" height="677" key="run.anything.popup" timestamp="1602827520718">
+    <state x="853" y="235" width="672" height="677" key="run.anything.popup" timestamp="1603106145330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="853" y="235" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602827520718" />
+    <state x="853" y="235" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603106145330" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

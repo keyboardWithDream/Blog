@@ -15,7 +15,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
  * @Date 2020/10/16
  */
 @EnableWebSecurity
-@EnableGlobalMethodSecurity(jsr250Enabled = true, securedEnabled = true)
+@EnableGlobalMethodSecurity(jsr250Enabled = true)
 public class MySecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
@@ -29,13 +29,14 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+
         //关闭跨域请求保护
         http.csrf().disable();
         //判断重复登录
         http.sessionManagement().maximumSessions(1);
         //指定登录成功及失败的跳转
-        http.formLogin().loginPage("/login")
-                .loginProcessingUrl("/login")
+        http.formLogin().loginPage("/userInfo_login")
+                .loginProcessingUrl("/userInfo/login")
                 .successForwardUrl("/userInfo/info")
                 .failureForwardUrl("/userInfo/failLogin");
     }

@@ -10,8 +10,15 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  */
 @Configuration
 public class MyMvcConfig implements WebMvcConfigurer {
+
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName("index");
+        registry.addViewController("/").setViewName("userInfo_index");
+        registry.addViewController("/index.html").setViewName("userInfo_index");
+        registry.addViewController("/login").setViewName("userInfo_login");
+        registry.addViewController("/login.html").setViewName("userInfo_login");
+        registry.addViewController("/signIn").setViewName("userInfo_signIn");
+        registry.addViewController("/signIn.html").setViewName("userInfo_signIn");
     }
+
 }

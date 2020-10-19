@@ -75,11 +75,20 @@ public class UserInfoServiceImpl implements UserInfoService {
         return userInfo;
     }
 
+    /**
+     * 通过用户名查询用户
+     * @param username 用户名
+     * @return 用户信息
+     */
     @Override
     public UserInfo selectUserInfoByUsername(String username) {
         return userInfoDao.selectUserInfoByUsername(username);
     }
 
+    /**
+     * 用户激活
+     * @param id 用户id
+     */
     @Override
     public void activeUserInfo(String id) {
         roleDao.updateRoleByUserId(id, "2");
