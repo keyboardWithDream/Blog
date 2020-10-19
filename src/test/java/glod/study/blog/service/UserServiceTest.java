@@ -31,4 +31,9 @@ public class UserServiceTest {
         userInfo.setUsername("testInsert");
         userInfoService.insertUserInfo(userInfo);
     }
+
+    @Test
+    public void testUpdateEmailByUsername(){
+        userInfoService.updateUserInfoEmailByUsername("hello", "1353662613@qq.com");
+    }
 }

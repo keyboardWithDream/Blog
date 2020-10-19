@@ -47,4 +47,9 @@ public class UserInfoDaoTest {
         UserInfo userInfo = userInfoDao.selectUserInfoByUsername("test");
         System.out.println(userInfo);
     }
+
+    @Test
+    public void testUpdateEmailByUsername(){
+        userInfoDao.updateUserInfoEmailByUsername("hello", "isharlan.hu@gmail.com");
+    }
 }

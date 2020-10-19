@@ -3,22 +3,17 @@ package glod.study.blog.controller;
 import glod.study.blog.domain.UserInfo;
 import glod.study.blog.service.ArticleService;
 import glod.study.blog.service.UserInfoService;
-import glod.study.blog.service.impl.UserInfoServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.core.context.SecurityContext;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import javax.annotation.security.PermitAll;
-import javax.annotation.security.RolesAllowed;
 import javax.servlet.http.HttpServletRequest;
+import java.security.Principal;
 
 /**
  * @Author Harlan
@@ -57,7 +52,7 @@ public class UserInfoController {
      * @return 登录页面
      */
     @RequestMapping("/failLogin")
-
+    @PermitAll
     public String failLogin(Model model){
         model.addAttribute("msg", "用户名或密码错误!");
         return "userInfo_login";
@@ -70,7 +65,7 @@ public class UserInfoController {
      * @return 信息页面
      */
     @RequestMapping("/info")
-    @RolesAllowed({"USER", "ADMIN", "TOURIST"})
+    @PreAuthorize("hasAnyRole({'ADMIN', 'TOURIST', 'USER'})")
     public String transToInfo(Model model){
         model.addAttribute("articleList", articleService.selectAllArticle());
         return "userInfo_info";

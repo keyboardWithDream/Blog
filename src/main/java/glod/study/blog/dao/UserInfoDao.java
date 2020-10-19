@@ -4,6 +4,8 @@ package glod.study.blog.dao;
 import glod.study.blog.domain.UserInfo;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
+
+import javax.websocket.server.PathParam;
 import java.util.List;
 
 /**
@@ -62,8 +64,15 @@ public interface UserInfoDao {
             @Result(property = "registrationTime", column = "registration_time"),
             @Result(property = "nikeName", column = "nike_name"),
             @Result(property = "roleList", column = "id", javaType = List.class, many = @Many(select = "glod.study.blog.dao.RoleDao.selectRoleByUserId")),
-            @Result(property = "articleList", column = "id", javaType = List.class, many = @Many(select = "glod.study.blog.dao.ArticleDao.selectArticleByUserId"))
+            @Result(property = "articleList", column = "username", javaType = List.class, many = @Many(select = "glod.study.blog.dao.ArticleDao.selectArticleByUsername"))
     })
     UserInfo selectUserInfoByUsername(String username);
 
+    /**
+     * 通过用户名更改邮箱
+     * @param username 用户名
+     * @param email 邮箱
+     */
+    @Update("update userinfo set email = #{email} where username = #{username}")
+    void updateUserInfoEmailByUsername(@PathParam("username") String username,@PathParam("eamil") String email);
 }

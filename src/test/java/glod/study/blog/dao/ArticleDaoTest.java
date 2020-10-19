@@ -29,11 +29,29 @@ public class ArticleDaoTest {
     }
 
     /**
-     * 通过用户id查询文章
+     * 通过用户名查询文章
      */
     @Test
     public void testSelectArticleByUserId(){
-        List<Article> articleList = articleDao.selectArticleByUserId("1");
+        List<Article> articleList = articleDao.selectArticleByUsername("test");
+        for (Article article : articleList) {
+            System.out.println(article);
+        }
+    }
+
+
+    @Test
+    public void testSelectArticleByUsername(){
+        List<Article> articleList = articleDao.selectArticleByUsername("%t%");
+        for (Article article : articleList) {
+            System.out.println(article);
+        }
+    }
+
+
+    @Test
+    public void testSelectArticleByContent(){
+        List<Article> articleList = articleDao.selectArticleByContent("%感谢%");
         for (Article article : articleList) {
             System.out.println(article);
         }

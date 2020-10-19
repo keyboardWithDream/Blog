@@ -24,4 +24,23 @@ public class ArticleServiceImpl implements ArticleService {
     public List<Article> selectAllArticle() {
         return articleDao.selectAllArticles();
     }
+
+    @Override
+    public List<Article> selectArticleByTittle(String tittle) {
+        String t = "%"+tittle+"%";
+        return articleDao.selectArticleByTittle(t);
+    }
+
+    @Override
+    public List<Article> selectArticleByUsername(String username) {
+        String t = "%"+username+"%";
+        return articleDao.selectArticleByUsername(t);
+    }
+
+    @Override
+    public List<Article> selectArticleByContent(String content) {
+        String c = "%"+content+"%";
+        return articleDao.selectArticleByContent(c);
+    }
+
 }

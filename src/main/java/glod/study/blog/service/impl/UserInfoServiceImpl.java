@@ -94,6 +94,23 @@ public class UserInfoServiceImpl implements UserInfoService {
         roleDao.updateRoleByUserId(id, "2");
     }
 
+    /**
+     * 通过用户名修改邮箱
+     * @param username 用户名
+     * @param email 新邮箱
+     */
+    @Override
+    public void updateUserInfoEmailByUsername(String username, String email) {
+        UserInfo userInfo = userInfoDao.selectUserInfoByUsername(username);
+        //用户修改的邮箱与目前邮箱相同则不做处理
+        if (!userInfo.getEmail().equals(email)){
+            userInfoDao.updateUserInfoEmailByUsername(username, email);
+            //重新进入未激活状态
+            roleDao.updateRoleByUserId(userInfo.getId(), "1");
+            rabbitTemplate.convertAndSend("amq.direct", "user.email", userInfo);
+        }
+    }
+
 
     /**
      * 权限控制

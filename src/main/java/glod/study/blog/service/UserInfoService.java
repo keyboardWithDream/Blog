@@ -1,10 +1,7 @@
 package glod.study.blog.service;
 
-import glod.study.blog.domain.Article;
 import glod.study.blog.domain.UserInfo;
 import org.springframework.security.core.userdetails.UserDetailsService;
-
-import java.util.List;
 
 /**
  * @Author Harlan
@@ -33,4 +30,11 @@ public interface UserInfoService extends UserDetailsService {
      * @param id 用户id
      */
     void activeUserInfo(String id);
+
+    /**
+     * 通过用户名修改邮箱
+     * @param username 用户名
+     * @param email 新邮箱
+     */
+    void updateUserInfoEmailByUsername(String username, String email);
 }

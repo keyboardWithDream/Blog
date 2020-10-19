@@ -8012,3 +8012,570 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [commo
 2020-10-19 19:51:16.114  INFO 11596 --- [main] glod.study.blog.BlogApplication          : Started BlogApplication in 3.375 seconds (JVM running for 4.868)
 2020-10-19 19:51:22.042  INFO 11596 --- [http-nio-80-exec-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
 2020-10-19 19:51:22.763  WARN 11596 --- [http-nio-80-exec-3] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [439] milliseconds.
+2020-10-19 20:01:54.303  INFO 5904 --- [main] glod.study.blog.BlogApplication          : Starting BlogApplication on HP-LAPTOP with PID 5904 (D:\Code\blog\target\classes started by 13536 in D:\Code\blog)
+2020-10-19 20:01:54.307  INFO 5904 --- [main] glod.study.blog.BlogApplication          : No active profile set, falling back to default profiles: default
+2020-10-19 20:01:55.639  INFO 5904 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-10-19 20:01:55.652  INFO 5904 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-19 20:01:55.652  INFO 5904 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-19 20:01:55.785  INFO 5904 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-19 20:01:55.785  INFO 5904 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1427 ms
+2020-10-19 20:01:55.829  INFO 5904 --- [main] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2020-10-19 20:01:55.829  INFO 5904 --- [main] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2020-10-19 20:01:56.501  INFO 5904 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5866731, org.springframework.security.web.context.SecurityContextPersistenceFilter@16f7f59f, org.springframework.security.web.header.HeaderWriterFilter@374ccb9, org.springframework.security.web.authentication.logout.LogoutFilter@6d6cd1e0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@76a9a009, org.springframework.security.web.session.ConcurrentSessionFilter@57ce2898, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53125718, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ad3f70a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@56a05324, org.springframework.security.web.session.SessionManagementFilter@2ab09943, org.springframework.security.web.access.ExceptionTranslationFilter@2c7c0e36]
+2020-10-19 20:01:56.604  INFO 5904 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-19 20:01:57.105  INFO 5904 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-10-19 20:01:57.107  INFO 5904 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.154.128:5672]
+2020-10-19 20:01:57.135  INFO 5904 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#3830b06c:0/SimpleConnection@12aa519b [delegate=amqp://guest@192.168.154.128:5672/, localPort= 10859]
+2020-10-19 20:01:57.203  INFO 5904 --- [main] glod.study.blog.BlogApplication          : Started BlogApplication in 3.576 seconds (JVM running for 5.161)
+2020-10-19 20:08:19.965  INFO 11912 --- [main] glod.study.blog.BlogApplication          : Starting BlogApplication on HP-LAPTOP with PID 11912 (D:\Code\blog\target\classes started by 13536 in D:\Code\blog)
+2020-10-19 20:08:19.970  INFO 11912 --- [main] glod.study.blog.BlogApplication          : No active profile set, falling back to default profiles: default
+2020-10-19 20:08:21.459  INFO 11912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-10-19 20:08:21.471  INFO 11912 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-19 20:08:21.471  INFO 11912 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-19 20:08:21.614  INFO 11912 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-19 20:08:21.615  INFO 11912 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1553 ms
+2020-10-19 20:08:21.673  INFO 11912 --- [main] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2020-10-19 20:08:21.675  INFO 11912 --- [main] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2020-10-19 20:08:22.401  INFO 11912 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b93dd6a, org.springframework.security.web.context.SecurityContextPersistenceFilter@7ac5b4c, org.springframework.security.web.header.HeaderWriterFilter@6d874695, org.springframework.security.web.authentication.logout.LogoutFilter@50cbcca7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@49491770, org.springframework.security.web.session.ConcurrentSessionFilter@45bbc52f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55d8c2c4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5fb5ad40, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@582a3b19, org.springframework.security.web.session.SessionManagementFilter@79add732, org.springframework.security.web.access.ExceptionTranslationFilter@4703c998]
+2020-10-19 20:08:22.535  INFO 11912 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-19 20:08:23.117  INFO 11912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-10-19 20:08:23.119  INFO 11912 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.154.128:5672]
+2020-10-19 20:08:23.155  INFO 11912 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#73bb1337:0/SimpleConnection@5611bba [delegate=amqp://guest@192.168.154.128:5672/, localPort= 11268]
+2020-10-19 20:08:23.195  INFO 11912 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-19 20:08:23.197  INFO 11912 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-19 20:08:23.210  INFO 11912 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-10-19 20:08:23.243  INFO 11912 --- [main] glod.study.blog.BlogApplication          : Started BlogApplication in 3.856 seconds (JVM running for 5.547)
+2020-10-19 20:08:23.652  INFO 11912 --- [http-nio-80-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-19 20:08:31.520  WARN 11912 --- [http-nio-80-exec-3] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [396] milliseconds.
+2020-10-19 20:10:17.520 ERROR 11912 --- [http-nio-80-exec-8] w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user.
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: null
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123) ~[spring-security-core-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144) ~[spring-security-core-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199) ~[spring-security-core-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:219) ~[spring-security-core-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:95) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.lang.NullPointerException: null
+	at glod.study.blog.service.impl.UserInfoServiceImpl.loadUserByUsername(UserInfoServiceImpl.java:113) ~[classes/:na]
+	at glod.study.blog.service.impl.UserInfoServiceImpl$$FastClassBySpringCGLIB$$ee4f73ba.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at glod.study.blog.service.impl.UserInfoServiceImpl$$EnhancerBySpringCGLIB$$33316b01.loadUserByUsername(<generated>) ~[classes/:na]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108) ~[spring-security-core-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	... 51 common frames omitted
+
+2020-10-19 20:10:25.019 ERROR 11912 --- [http-nio-80-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+org.springframework.security.access.AccessDeniedException: 不允许访问
+	at org.springframework.security.access.vote.AffirmativeBased.decide(AffirmativeBased.java:84) ~[spring-security-core-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:233) ~[spring-security-core-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor.invoke(MethodSecurityInterceptor.java:65) ~[spring-security-core-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at glod.study.blog.controller.UserInfoController$$EnhancerBySpringCGLIB$$c3ba02eb.transToInfo(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.38.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.38.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequestDispatcher.forward(HeaderWriterFilter.java:172) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.ForwardAuthenticationSuccessHandler.onAuthenticationSuccess(ForwardAuthenticationSuccessHandler.java:50) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.successfulAuthentication(AbstractAuthenticationProcessingFilter.java:326) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:240) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2020-10-19 20:10:25.023 ERROR 11912 --- [http-nio-80-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.security.access.AccessDeniedException: 不允许访问] with root cause
+
+org.springframework.security.access.AccessDeniedException: 不允许访问
+	at org.springframework.security.access.vote.AffirmativeBased.decide(AffirmativeBased.java:84) ~[spring-security-core-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:233) ~[spring-security-core-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor.invoke(MethodSecurityInterceptor.java:65) ~[spring-security-core-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at glod.study.blog.controller.UserInfoController$$EnhancerBySpringCGLIB$$c3ba02eb.transToInfo(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.38.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.38.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequestDispatcher.forward(HeaderWriterFilter.java:172) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.ForwardAuthenticationSuccessHandler.onAuthenticationSuccess(ForwardAuthenticationSuccessHandler.java:50) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.successfulAuthentication(AbstractAuthenticationProcessingFilter.java:326) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:240) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2020-10-19 20:11:23.260  INFO 7816 --- [main] glod.study.blog.BlogApplication          : Starting BlogApplication on HP-LAPTOP with PID 7816 (D:\Code\blog\target\classes started by 13536 in D:\Code\blog)
+2020-10-19 20:11:23.263  INFO 7816 --- [main] glod.study.blog.BlogApplication          : No active profile set, falling back to default profiles: default
+2020-10-19 20:11:24.736  INFO 7816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-10-19 20:11:24.747  INFO 7816 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-19 20:11:24.747  INFO 7816 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-19 20:11:24.892  INFO 7816 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-19 20:11:24.893  INFO 7816 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1577 ms
+2020-10-19 20:11:24.951  INFO 7816 --- [main] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2020-10-19 20:11:24.952  INFO 7816 --- [main] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2020-10-19 20:11:25.724  INFO 7816 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1be52861, org.springframework.security.web.context.SecurityContextPersistenceFilter@5b066c33, org.springframework.security.web.header.HeaderWriterFilter@2abc55c4, org.springframework.security.web.authentication.logout.LogoutFilter@7ac5b4c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@150fc7a7, org.springframework.security.web.session.ConcurrentSessionFilter@2d22d3b1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47fb7ec9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3be3e76c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5fb5ad40, org.springframework.security.web.session.SessionManagementFilter@71c0b742, org.springframework.security.web.access.ExceptionTranslationFilter@39f0c343]
+2020-10-19 20:11:25.865  INFO 7816 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-19 20:11:26.468  INFO 7816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-10-19 20:11:26.470  INFO 7816 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.154.128:5672]
+2020-10-19 20:11:26.505  INFO 7816 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#357c9bd9:0/SimpleConnection@24a8e40d [delegate=amqp://guest@192.168.154.128:5672/, localPort= 11494]
+2020-10-19 20:11:26.591  INFO 7816 --- [main] glod.study.blog.BlogApplication          : Started BlogApplication in 3.99 seconds (JVM running for 5.657)
+2020-10-19 20:11:26.622  INFO 7816 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-19 20:11:26.624  INFO 7816 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-19 20:11:26.631  INFO 7816 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-10-19 20:11:33.234  INFO 7816 --- [http-nio-80-exec-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-19 20:11:33.868  WARN 7816 --- [http-nio-80-exec-5] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [453] milliseconds.
+2020-10-19 21:42:22.489  INFO 12228 --- [main] glod.study.blog.dao.UserInfoDaoTest      : Starting UserInfoDaoTest on HP-LAPTOP with PID 12228 (started by 13536 in D:\Code\blog)
+2020-10-19 21:42:22.493  INFO 12228 --- [main] glod.study.blog.dao.UserInfoDaoTest      : No active profile set, falling back to default profiles: default
+2020-10-19 21:42:25.894  INFO 12228 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15a8cebd, org.springframework.security.web.context.SecurityContextPersistenceFilter@17216605, org.springframework.security.web.header.HeaderWriterFilter@25699aa7, org.springframework.security.web.authentication.logout.LogoutFilter@7caf1e5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@38087342, org.springframework.security.web.session.ConcurrentSessionFilter@799f354a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55c1ced9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a88c4f5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f6c2763, org.springframework.security.web.session.SessionManagementFilter@1cde374, org.springframework.security.web.access.ExceptionTranslationFilter@5e9bf744]
+2020-10-19 21:42:26.405  INFO 12228 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-19 21:42:27.061  INFO 12228 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.154.128:5672]
+2020-10-19 21:42:27.124  INFO 12228 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#696b52bc:0/SimpleConnection@4392362c [delegate=amqp://guest@192.168.154.128:5672/, localPort= 14340]
+2020-10-19 21:42:27.194  INFO 12228 --- [main] glod.study.blog.dao.UserInfoDaoTest      : Started UserInfoDaoTest in 5.18 seconds (JVM running for 7.018)
+2020-10-19 21:42:28.361  INFO 12228 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-19 21:42:28.553  INFO 12228 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-10-19 21:42:29.193  INFO 12228 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-10-19 21:42:29.197  INFO 12228 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-19 21:42:29.197  INFO 12228 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-10-19 21:42:29.216  INFO 12228 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-19 21:43:56.844  INFO 12528 --- [main] glod.study.blog.service.UserServiceTest  : Starting UserServiceTest on HP-LAPTOP with PID 12528 (started by 13536 in D:\Code\blog)
+2020-10-19 21:43:56.846  INFO 12528 --- [main] glod.study.blog.service.UserServiceTest  : No active profile set, falling back to default profiles: default
+2020-10-19 21:44:01.887  INFO 12528 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2674d4f6, org.springframework.security.web.context.SecurityContextPersistenceFilter@4662752a, org.springframework.security.web.header.HeaderWriterFilter@3b170235, org.springframework.security.web.authentication.logout.LogoutFilter@1144a02b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@45287377, org.springframework.security.web.session.ConcurrentSessionFilter@46612bfc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e4eda17, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33bdd01, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d9d2119, org.springframework.security.web.session.SessionManagementFilter@48cdb156, org.springframework.security.web.access.ExceptionTranslationFilter@53feeac9]
+2020-10-19 21:44:02.375  INFO 12528 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-19 21:44:03.919  INFO 12528 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.154.128:5672]
+2020-10-19 21:44:04.019  INFO 12528 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#4b195203:0/SimpleConnection@6b7c4734 [delegate=amqp://guest@192.168.154.128:5672/, localPort= 14443]
+2020-10-19 21:44:04.110  INFO 12528 --- [main] glod.study.blog.service.UserServiceTest  : Started UserServiceTest in 8.709 seconds (JVM running for 10.469)
+2020-10-19 21:44:05.428  INFO 12528 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-19 21:44:05.686  INFO 12528 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-10-19 21:44:10.692  INFO 12528 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Workers not finished.
+2020-10-19 21:44:10.692  WARN 12528 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Closing channel for unresponsive consumer: Consumer@51cca357: tags=[[amq.ctag-PBqa3VQYLR_uLx-4VosPxw]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@192.168.154.128:5672/,1), conn: Proxy@734cf881 Shared Rabbit Connection: SimpleConnection@6b7c4734 [delegate=amqp://guest@192.168.154.128:5672/, localPort= 14443], acknowledgeMode=AUTO local queue size=0
+2020-10-19 21:44:10.699  INFO 12528 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-19 21:44:10.699  INFO 12528 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-10-19 21:44:10.723  INFO 12528 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-19 21:46:52.690  INFO 15284 --- [main] glod.study.blog.service.UserServiceTest  : Starting UserServiceTest on HP-LAPTOP with PID 15284 (started by 13536 in D:\Code\blog)
+2020-10-19 21:46:52.706  INFO 15284 --- [main] glod.study.blog.service.UserServiceTest  : No active profile set, falling back to default profiles: default
+2020-10-19 21:46:57.965  INFO 15284 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c234920, org.springframework.security.web.context.SecurityContextPersistenceFilter@15369d73, org.springframework.security.web.header.HeaderWriterFilter@17fbfb02, org.springframework.security.web.authentication.logout.LogoutFilter@11826398, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1a88c4f5, org.springframework.security.web.session.ConcurrentSessionFilter@267891bf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9263c54, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e4eda17, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ddeb27f, org.springframework.security.web.session.SessionManagementFilter@6c8efde4, org.springframework.security.web.access.ExceptionTranslationFilter@1abcd059]
+2020-10-19 21:46:58.876  INFO 15284 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-19 21:47:00.118  INFO 15284 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.154.128:5672]
+2020-10-19 21:47:00.216  INFO 15284 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#77cca767:0/SimpleConnection@6d31f14 [delegate=amqp://guest@192.168.154.128:5672/, localPort= 14796]
+2020-10-19 21:47:00.328  INFO 15284 --- [main] glod.study.blog.service.UserServiceTest  : Started UserServiceTest in 8.649 seconds (JVM running for 10.716)
+2020-10-19 21:47:01.626  INFO 15284 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-19 21:47:01.886  INFO 15284 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-10-19 21:47:06.892  INFO 15284 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Workers not finished.
+2020-10-19 21:47:06.893  WARN 15284 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Closing channel for unresponsive consumer: Consumer@20184ade: tags=[[amq.ctag-d8b9fG843KVB_w62ksr18Q]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@192.168.154.128:5672/,1), conn: Proxy@6b7c4734 Shared Rabbit Connection: SimpleConnection@6d31f14 [delegate=amqp://guest@192.168.154.128:5672/, localPort= 14796], acknowledgeMode=AUTO local queue size=0
+2020-10-19 21:47:06.901  INFO 15284 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-19 21:47:06.901  INFO 15284 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-10-19 21:47:06.922  INFO 15284 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-19 21:50:41.381  INFO 14584 --- [main] glod.study.blog.service.UserServiceTest  : Starting UserServiceTest on HP-LAPTOP with PID 14584 (started by 13536 in D:\Code\blog)
+2020-10-19 21:50:41.384  INFO 14584 --- [main] glod.study.blog.service.UserServiceTest  : No active profile set, falling back to default profiles: default
+2020-10-19 21:50:45.181  INFO 14584 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@410fc508, org.springframework.security.web.context.SecurityContextPersistenceFilter@111a7973, org.springframework.security.web.header.HeaderWriterFilter@1d99ee1b, org.springframework.security.web.authentication.logout.LogoutFilter@3ace6346, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@10a907ec, org.springframework.security.web.session.ConcurrentSessionFilter@45e140ae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@46612bfc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1cde374, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e17442f, org.springframework.security.web.session.SessionManagementFilter@7c0df4ab, org.springframework.security.web.access.ExceptionTranslationFilter@18c880ea]
+2020-10-19 21:50:45.672  INFO 14584 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-19 21:50:46.693  INFO 14584 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.154.128:5672]
+2020-10-19 21:50:46.775  INFO 14584 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#1472208d:0/SimpleConnection@3cad24ae [delegate=amqp://guest@192.168.154.128:5672/, localPort= 1037]
+2020-10-19 21:50:46.858  INFO 14584 --- [main] glod.study.blog.service.UserServiceTest  : Started UserServiceTest in 6.078 seconds (JVM running for 7.829)
+2020-10-19 21:50:48.029  INFO 14584 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-19 21:50:48.391  INFO 14584 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-10-19 21:50:53.394  INFO 14584 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Workers not finished.
+2020-10-19 21:50:53.395  WARN 14584 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Closing channel for unresponsive consumer: Consumer@22361e23: tags=[[amq.ctag-ag6gvQ7KHBClhczUz83mcQ]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@192.168.154.128:5672/,1), conn: Proxy@65ef9a0a Shared Rabbit Connection: SimpleConnection@3cad24ae [delegate=amqp://guest@192.168.154.128:5672/, localPort= 1037], acknowledgeMode=AUTO local queue size=0
+2020-10-19 21:50:53.404  INFO 14584 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-19 21:50:53.405  INFO 14584 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-10-19 21:50:53.425  INFO 14584 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-19 21:51:38.209  INFO 1856 --- [main] glod.study.blog.BlogApplication          : Starting BlogApplication on HP-LAPTOP with PID 1856 (D:\Code\blog\target\classes started by 13536 in D:\Code\blog)
+2020-10-19 21:51:38.213  INFO 1856 --- [main] glod.study.blog.BlogApplication          : No active profile set, falling back to default profiles: default
+2020-10-19 21:51:39.847  INFO 1856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-10-19 21:51:39.856  INFO 1856 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-19 21:51:39.857  INFO 1856 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-19 21:51:40.039  INFO 1856 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-19 21:51:40.040  INFO 1856 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1751 ms
+2020-10-19 21:51:40.101  INFO 1856 --- [main] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2020-10-19 21:51:40.103  INFO 1856 --- [main] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2020-10-19 21:51:40.896  INFO 1856 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73bb573d, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c1fa494, org.springframework.security.web.header.HeaderWriterFilter@6c07ad6b, org.springframework.security.web.authentication.logout.LogoutFilter@35f7969d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3404e5c4, org.springframework.security.web.session.ConcurrentSessionFilter@489110c2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@649b5891, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2315052d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ac058a0, org.springframework.security.web.session.SessionManagementFilter@76e4212, org.springframework.security.web.access.ExceptionTranslationFilter@79add732]
+2020-10-19 21:51:41.021  INFO 1856 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-19 21:51:41.632  INFO 1856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-10-19 21:51:41.634  INFO 1856 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.154.128:5672]
+2020-10-19 21:51:41.672  INFO 1856 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#3a3b10f4:0/SimpleConnection@4cfc0c48 [delegate=amqp://guest@192.168.154.128:5672/, localPort= 1082]
+2020-10-19 21:51:41.741  INFO 1856 --- [main] glod.study.blog.BlogApplication          : Started BlogApplication in 4.09 seconds (JVM running for 5.721)
+2020-10-19 21:53:53.900  INFO 1856 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-19 21:53:53.902  INFO 1856 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-19 21:53:53.910  INFO 1856 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-10-19 21:54:44.299  INFO 2812 --- [main] glod.study.blog.BlogApplication          : Starting BlogApplication on HP-LAPTOP with PID 2812 (D:\Code\blog\target\classes started by 13536 in D:\Code\blog)
+2020-10-19 21:54:44.302  INFO 2812 --- [main] glod.study.blog.BlogApplication          : No active profile set, falling back to default profiles: default
+2020-10-19 21:54:45.737  INFO 2812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-10-19 21:54:45.745  INFO 2812 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-19 21:54:45.746  INFO 2812 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-19 21:54:45.879  INFO 2812 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-19 21:54:45.879  INFO 2812 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1520 ms
+2020-10-19 21:54:45.930  INFO 2812 --- [main] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2020-10-19 21:54:45.933  INFO 2812 --- [main] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2020-10-19 21:54:46.660  INFO 2812 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@736b21ee, org.springframework.security.web.context.SecurityContextPersistenceFilter@649b5891, org.springframework.security.web.header.HeaderWriterFilter@76e4212, org.springframework.security.web.authentication.logout.LogoutFilter@47569167, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@42d9e8d2, org.springframework.security.web.session.ConcurrentSessionFilter@7ac5b4c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1be52861, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67d8faec, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60deefed, org.springframework.security.web.session.SessionManagementFilter@72af90e8, org.springframework.security.web.access.ExceptionTranslationFilter@6c07ad6b]
+2020-10-19 21:54:46.783  INFO 2812 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-19 21:54:47.335  INFO 2812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-10-19 21:54:47.336  INFO 2812 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.154.128:5672]
+2020-10-19 21:54:47.366  INFO 2812 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#49580ca8:0/SimpleConnection@347123dc [delegate=amqp://guest@192.168.154.128:5672/, localPort= 1238]
+2020-10-19 21:54:47.440  INFO 2812 --- [main] glod.study.blog.BlogApplication          : Started BlogApplication in 3.572 seconds (JVM running for 5.1)
+2020-10-19 21:55:13.356  INFO 19044 --- [main] glod.study.blog.service.UserServiceTest  : Starting UserServiceTest on HP-LAPTOP with PID 19044 (started by 13536 in D:\Code\blog)
+2020-10-19 21:55:13.359  INFO 19044 --- [main] glod.study.blog.service.UserServiceTest  : No active profile set, falling back to default profiles: default
+2020-10-19 21:55:17.211  INFO 19044 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63f9ddf9, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a109ff7, org.springframework.security.web.header.HeaderWriterFilter@105db94d, org.springframework.security.web.authentication.logout.LogoutFilter@642c6461, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@17216605, org.springframework.security.web.session.ConcurrentSessionFilter@5e9bf744, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78b0ec3a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@15369d73, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@410fc508, org.springframework.security.web.session.SessionManagementFilter@167a21b, org.springframework.security.web.access.ExceptionTranslationFilter@164d01ba]
+2020-10-19 21:55:17.708  INFO 19044 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-19 21:55:18.533  INFO 19044 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.154.128:5672]
+2020-10-19 21:55:18.607  INFO 19044 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#191c6e13:0/SimpleConnection@75e4fe3c [delegate=amqp://guest@192.168.154.128:5672/, localPort= 1273]
+2020-10-19 21:55:18.689  INFO 19044 --- [main] glod.study.blog.service.UserServiceTest  : Started UserServiceTest in 5.897 seconds (JVM running for 7.736)
+2020-10-19 21:55:19.861  INFO 19044 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-19 21:55:20.169  INFO 19044 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-10-19 21:55:20.679  INFO 19044 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-10-19 21:55:20.685  INFO 19044 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-19 21:55:20.685  INFO 19044 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-10-19 21:55:20.711  INFO 19044 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-19 21:55:29.552  INFO 10776 --- [main] glod.study.blog.service.UserServiceTest  : Starting UserServiceTest on HP-LAPTOP with PID 10776 (started by 13536 in D:\Code\blog)
+2020-10-19 21:55:29.558  INFO 10776 --- [main] glod.study.blog.service.UserServiceTest  : No active profile set, falling back to default profiles: default
+2020-10-19 21:55:33.696  INFO 10776 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a316f6b, org.springframework.security.web.context.SecurityContextPersistenceFilter@267891bf, org.springframework.security.web.header.HeaderWriterFilter@70091872, org.springframework.security.web.authentication.logout.LogoutFilter@27ffd9f8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4e48462d, org.springframework.security.web.session.ConcurrentSessionFilter@3b170235, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a2773a8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a47730c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@63f9ddf9, org.springframework.security.web.session.SessionManagementFilter@3915e7c3, org.springframework.security.web.access.ExceptionTranslationFilter@401e02b4]
+2020-10-19 21:55:34.133  INFO 10776 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-19 21:55:34.859  INFO 10776 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.154.128:5672]
+2020-10-19 21:55:34.924  INFO 10776 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#1472208d:0/SimpleConnection@839755f [delegate=amqp://guest@192.168.154.128:5672/, localPort= 1304]
+2020-10-19 21:55:34.997  INFO 10776 --- [main] glod.study.blog.service.UserServiceTest  : Started UserServiceTest in 6.125 seconds (JVM running for 8.293)
+2020-10-19 21:55:35.969  INFO 10776 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-19 21:55:36.238  INFO 10776 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-10-19 21:55:41.246  INFO 10776 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Workers not finished.
+2020-10-19 21:55:41.247  WARN 10776 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Closing channel for unresponsive consumer: Consumer@77ce8bc5: tags=[[amq.ctag-mb6nr6A8jqzenSMy70ioLg]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@192.168.154.128:5672/,1), conn: Proxy@4ef8090b Shared Rabbit Connection: SimpleConnection@839755f [delegate=amqp://guest@192.168.154.128:5672/, localPort= 1304], acknowledgeMode=AUTO local queue size=0
+2020-10-19 21:55:41.255  INFO 10776 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-19 21:55:41.255  INFO 10776 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-10-19 21:55:41.275  INFO 10776 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-19 21:59:42.136  INFO 2812 --- [http-nio-80-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-19 21:59:42.137  INFO 2812 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-19 21:59:42.149  INFO 2812 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-10-19 21:59:42.552  INFO 2812 --- [http-nio-80-exec-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-19 22:19:11.275  INFO 8232 --- [main] glod.study.blog.dao.ArticleDaoTest       : Starting ArticleDaoTest on HP-LAPTOP with PID 8232 (started by 13536 in D:\Code\blog)
+2020-10-19 22:19:11.277  INFO 8232 --- [main] glod.study.blog.dao.ArticleDaoTest       : No active profile set, falling back to default profiles: default
+2020-10-19 22:19:15.035  INFO 8232 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1894fa9f, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b170235, org.springframework.security.web.header.HeaderWriterFilter@48567727, org.springframework.security.web.authentication.logout.LogoutFilter@2e4eda17, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@21d9cd04, org.springframework.security.web.session.ConcurrentSessionFilter@7c0df4ab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@48cdb156, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b441e56, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1144a02b, org.springframework.security.web.session.SessionManagementFilter@1abcd059, org.springframework.security.web.access.ExceptionTranslationFilter@49b89425]
+2020-10-19 22:19:15.549  INFO 8232 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-19 22:19:16.413  INFO 8232 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.154.128:5672]
+2020-10-19 22:19:16.493  INFO 8232 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#36f6e521:0/SimpleConnection@2b6fcca1 [delegate=amqp://guest@192.168.154.128:5672/, localPort= 1887]
+2020-10-19 22:19:16.573  INFO 8232 --- [main] glod.study.blog.dao.ArticleDaoTest       : Started ArticleDaoTest in 5.991 seconds (JVM running for 8.029)
+2020-10-19 22:19:17.667  INFO 8232 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-19 22:19:17.789  INFO 8232 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-10-19 22:19:18.565  INFO 8232 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-10-19 22:19:18.570  INFO 8232 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-19 22:19:18.571  INFO 8232 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-10-19 22:19:18.589  INFO 8232 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-19 22:20:00.223  INFO 10596 --- [main] glod.study.blog.dao.UserInfoDaoTest      : Starting UserInfoDaoTest on HP-LAPTOP with PID 10596 (started by 13536 in D:\Code\blog)
+2020-10-19 22:20:00.225  INFO 10596 --- [main] glod.study.blog.dao.UserInfoDaoTest      : No active profile set, falling back to default profiles: default
+2020-10-19 22:20:04.440  INFO 10596 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@274fdea6, org.springframework.security.web.context.SecurityContextPersistenceFilter@55c1ced9, org.springframework.security.web.header.HeaderWriterFilter@1cde374, org.springframework.security.web.authentication.logout.LogoutFilter@38087342, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2674d4f6, org.springframework.security.web.session.ConcurrentSessionFilter@7ac48f05, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c5ca0b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26a4f9ed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@74c121d4, org.springframework.security.web.session.SessionManagementFilter@28daf506, org.springframework.security.web.access.ExceptionTranslationFilter@4b4814d0]
+2020-10-19 22:20:04.916  INFO 10596 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-19 22:20:05.670  INFO 10596 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.154.128:5672]
+2020-10-19 22:20:05.755  INFO 10596 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#19f02280:0/SimpleConnection@654b899f [delegate=amqp://guest@192.168.154.128:5672/, localPort= 1924]
+2020-10-19 22:20:05.863  INFO 10596 --- [main] glod.study.blog.dao.UserInfoDaoTest      : Started UserInfoDaoTest in 6.259 seconds (JVM running for 7.983)
+2020-10-19 22:20:06.903  INFO 10596 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-19 22:20:07.113  INFO 10596 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-10-19 22:20:07.859  INFO 10596 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-10-19 22:20:07.864  INFO 10596 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-19 22:20:07.864  INFO 10596 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-10-19 22:20:07.883  INFO 10596 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-19 22:32:59.532  INFO 15392 --- [main] glod.study.blog.dao.ArticleDaoTest       : Starting ArticleDaoTest on HP-LAPTOP with PID 15392 (started by 13536 in D:\Code\blog)
+2020-10-19 22:32:59.534  INFO 15392 --- [main] glod.study.blog.dao.ArticleDaoTest       : No active profile set, falling back to default profiles: default
+2020-10-19 22:33:03.107  INFO 15392 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35e74e08, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b441e56, org.springframework.security.web.header.HeaderWriterFilter@48567727, org.springframework.security.web.authentication.logout.LogoutFilter@7af1d072, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3ace6346, org.springframework.security.web.session.ConcurrentSessionFilter@7c0df4ab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@111a7973, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25699aa7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@a316f6b, org.springframework.security.web.session.SessionManagementFilter@1abcd059, org.springframework.security.web.access.ExceptionTranslationFilter@49b89425]
+2020-10-19 22:33:03.542  INFO 15392 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-19 22:33:04.303  INFO 15392 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.154.128:5672]
+2020-10-19 22:33:04.390  INFO 15392 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#47a4eee2:0/SimpleConnection@42a05533 [delegate=amqp://guest@192.168.154.128:5672/, localPort= 2232]
+2020-10-19 22:33:04.469  INFO 15392 --- [main] glod.study.blog.dao.ArticleDaoTest       : Started ArticleDaoTest in 5.525 seconds (JVM running for 7.355)
+2020-10-19 22:33:05.562  INFO 15392 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-19 22:33:05.650  INFO 15392 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-10-19 22:33:06.459  INFO 15392 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-10-19 22:33:06.465  INFO 15392 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-19 22:33:06.465  INFO 15392 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-10-19 22:33:06.483  INFO 15392 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-19 22:33:18.555  INFO 5412 --- [main] glod.study.blog.dao.ArticleDaoTest       : Starting ArticleDaoTest on HP-LAPTOP with PID 5412 (started by 13536 in D:\Code\blog)
+2020-10-19 22:33:18.558  INFO 5412 --- [main] glod.study.blog.dao.ArticleDaoTest       : No active profile set, falling back to default profiles: default
+2020-10-19 22:33:22.407  INFO 5412 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@250967f1, org.springframework.security.web.context.SecurityContextPersistenceFilter@27ffd9f8, org.springframework.security.web.header.HeaderWriterFilter@1a2773a8, org.springframework.security.web.authentication.logout.LogoutFilter@4f5c30b1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@29bd85db, org.springframework.security.web.session.ConcurrentSessionFilter@2e4eda17, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e48462d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49cc9b2a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@25c1f5ee, org.springframework.security.web.session.SessionManagementFilter@4f213a2, org.springframework.security.web.access.ExceptionTranslationFilter@6f315b08]
+2020-10-19 22:33:23.125  INFO 5412 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-19 22:33:24.112  INFO 5412 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.154.128:5672]
+2020-10-19 22:33:24.191  INFO 5412 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#4f081b5d:0/SimpleConnection@31f5b923 [delegate=amqp://guest@192.168.154.128:5672/, localPort= 2255]
+2020-10-19 22:33:24.264  INFO 5412 --- [main] glod.study.blog.dao.ArticleDaoTest       : Started ArticleDaoTest in 6.287 seconds (JVM running for 8.081)
+2020-10-19 22:33:25.326  INFO 5412 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-19 22:33:25.410  INFO 5412 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-10-19 22:33:26.260  INFO 5412 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-10-19 22:33:26.264  INFO 5412 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-19 22:33:26.264  INFO 5412 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-10-19 22:33:26.284  INFO 5412 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-19 22:37:23.755  INFO 13392 --- [main] glod.study.blog.dao.ArticleDaoTest       : Starting ArticleDaoTest on HP-LAPTOP with PID 13392 (started by 13536 in D:\Code\blog)
+2020-10-19 22:37:23.758  INFO 13392 --- [main] glod.study.blog.dao.ArticleDaoTest       : No active profile set, falling back to default profiles: default
+2020-10-19 22:37:28.344  INFO 13392 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@74c121d4, org.springframework.security.web.context.SecurityContextPersistenceFilter@49cc9b2a, org.springframework.security.web.header.HeaderWriterFilter@6818fd48, org.springframework.security.web.authentication.logout.LogoutFilter@681de87f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5d9d2119, org.springframework.security.web.session.ConcurrentSessionFilter@7af1d072, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37b01ce2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a572ea0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a484710, org.springframework.security.web.session.SessionManagementFilter@4662752a, org.springframework.security.web.access.ExceptionTranslationFilter@4ae8fb2a]
+2020-10-19 22:37:28.947  INFO 13392 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-19 22:37:29.794  INFO 13392 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.154.128:5672]
+2020-10-19 22:37:29.864  INFO 13392 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#19f02280:0/SimpleConnection@283e1759 [delegate=amqp://guest@192.168.154.128:5672/, localPort= 2414]
+2020-10-19 22:37:29.942  INFO 13392 --- [main] glod.study.blog.dao.ArticleDaoTest       : Started ArticleDaoTest in 6.91 seconds (JVM running for 8.923)
+2020-10-19 22:37:31.201  INFO 13392 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-19 22:37:31.279  INFO 13392 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-10-19 22:37:31.934  INFO 13392 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-10-19 22:37:31.938  INFO 13392 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-19 22:37:31.939  INFO 13392 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-10-19 22:37:31.958  INFO 13392 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-19 22:40:33.496  INFO 21464 --- [main] glod.study.blog.dao.ArticleDaoTest       : Starting ArticleDaoTest on HP-LAPTOP with PID 21464 (started by 13536 in D:\Code\blog)
+2020-10-19 22:40:33.498  INFO 21464 --- [main] glod.study.blog.dao.ArticleDaoTest       : No active profile set, falling back to default profiles: default
+2020-10-19 22:40:37.420  INFO 21464 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@74c121d4, org.springframework.security.web.context.SecurityContextPersistenceFilter@49cc9b2a, org.springframework.security.web.header.HeaderWriterFilter@6818fd48, org.springframework.security.web.authentication.logout.LogoutFilter@681de87f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5d9d2119, org.springframework.security.web.session.ConcurrentSessionFilter@7af1d072, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37b01ce2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a572ea0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a484710, org.springframework.security.web.session.SessionManagementFilter@4662752a, org.springframework.security.web.access.ExceptionTranslationFilter@4ae8fb2a]
+2020-10-19 22:40:37.874  INFO 21464 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-19 22:40:38.750  INFO 21464 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.154.128:5672]
+2020-10-19 22:40:38.836  INFO 21464 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#19f02280:0/SimpleConnection@734cf881 [delegate=amqp://guest@192.168.154.128:5672/, localPort= 2622]
+2020-10-19 22:40:38.916  INFO 21464 --- [main] glod.study.blog.dao.ArticleDaoTest       : Started ArticleDaoTest in 6.221 seconds (JVM running for 8.746)
+2020-10-19 22:40:40.056  INFO 21464 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-19 22:40:40.123  INFO 21464 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-10-19 22:40:40.907  INFO 21464 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-10-19 22:40:40.911  INFO 21464 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-19 22:40:40.911  INFO 21464 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-10-19 22:40:40.931  INFO 21464 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-19 22:41:52.824  INFO 19352 --- [main] glod.study.blog.dao.ArticleDaoTest       : Starting ArticleDaoTest on HP-LAPTOP with PID 19352 (started by 13536 in D:\Code\blog)
+2020-10-19 22:41:52.826  INFO 19352 --- [main] glod.study.blog.dao.ArticleDaoTest       : No active profile set, falling back to default profiles: default
+2020-10-19 22:41:56.646  INFO 19352 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e17442f, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a2773a8, org.springframework.security.web.header.HeaderWriterFilter@3915e7c3, org.springframework.security.web.authentication.logout.LogoutFilter@4e48462d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@59b492ec, org.springframework.security.web.session.ConcurrentSessionFilter@48cdb156, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f213a2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6818fd48, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f5c30b1, org.springframework.security.web.session.SessionManagementFilter@2e362407, org.springframework.security.web.access.ExceptionTranslationFilter@5ac044ef]
+2020-10-19 22:41:57.175  INFO 19352 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-19 22:41:58.040  INFO 19352 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.154.128:5672]
+2020-10-19 22:41:58.140  INFO 19352 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#55846997:0/SimpleConnection@21540255 [delegate=amqp://guest@192.168.154.128:5672/, localPort= 2660]
+2020-10-19 22:41:58.240  INFO 19352 --- [main] glod.study.blog.dao.ArticleDaoTest       : Started ArticleDaoTest in 6.025 seconds (JVM running for 8.02)
+2020-10-19 22:41:59.475  INFO 19352 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-19 22:41:59.625  INFO 19352 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-10-19 22:42:00.230  INFO 19352 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-10-19 22:42:00.234  INFO 19352 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-19 22:42:00.234  INFO 19352 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-10-19 22:42:00.252  INFO 19352 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-19 22:42:07.480  INFO 13148 --- [main] glod.study.blog.dao.ArticleDaoTest       : Starting ArticleDaoTest on HP-LAPTOP with PID 13148 (started by 13536 in D:\Code\blog)
+2020-10-19 22:42:07.481  INFO 13148 --- [main] glod.study.blog.dao.ArticleDaoTest       : No active profile set, falling back to default profiles: default
+2020-10-19 22:42:11.267  INFO 13148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@633ddc0c, org.springframework.security.web.context.SecurityContextPersistenceFilter@4e17442f, org.springframework.security.web.header.HeaderWriterFilter@3ace6346, org.springframework.security.web.authentication.logout.LogoutFilter@7bf018dd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5c82031b, org.springframework.security.web.session.ConcurrentSessionFilter@7a572ea0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d7f8467, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@38087342, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4bcdd11, org.springframework.security.web.session.SessionManagementFilter@10a907ec, org.springframework.security.web.access.ExceptionTranslationFilter@28daf506]
+2020-10-19 22:42:11.869  INFO 13148 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-19 22:42:12.688  INFO 13148 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.154.128:5672]
+2020-10-19 22:42:12.771  INFO 13148 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#19f02280:0/SimpleConnection@8d810f2 [delegate=amqp://guest@192.168.154.128:5672/, localPort= 2684]
+2020-10-19 22:42:12.857  INFO 13148 --- [main] glod.study.blog.dao.ArticleDaoTest       : Started ArticleDaoTest in 5.987 seconds (JVM running for 7.769)
+2020-10-19 22:42:14.126  INFO 13148 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-19 22:42:14.205  INFO 13148 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-10-19 22:42:14.850  INFO 13148 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-10-19 22:42:14.856  INFO 13148 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-19 22:42:14.856  INFO 13148 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-10-19 22:42:14.875  INFO 13148 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-19 22:42:56.178  INFO 18820 --- [main] glod.study.blog.dao.ArticleDaoTest       : Starting ArticleDaoTest on HP-LAPTOP with PID 18820 (started by 13536 in D:\Code\blog)
+2020-10-19 22:42:56.180  INFO 18820 --- [main] glod.study.blog.dao.ArticleDaoTest       : No active profile set, falling back to default profiles: default
+2020-10-19 22:42:59.630  INFO 18820 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c82031b, org.springframework.security.web.context.SecurityContextPersistenceFilter@514377fc, org.springframework.security.web.header.HeaderWriterFilter@45e140ae, org.springframework.security.web.authentication.logout.LogoutFilter@7ddeb27f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2eb1c615, org.springframework.security.web.session.ConcurrentSessionFilter@25699aa7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@642c6461, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1144a02b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@274fdea6, org.springframework.security.web.session.SessionManagementFilter@4ae8fb2a, org.springframework.security.web.access.ExceptionTranslationFilter@105db94d]
+2020-10-19 22:43:00.045  INFO 18820 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-19 22:43:00.975  INFO 18820 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.154.128:5672]
+2020-10-19 22:43:01.054  INFO 18820 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#6de004f1:0/SimpleConnection@58021c3c [delegate=amqp://guest@192.168.154.128:5672/, localPort= 2716]
+2020-10-19 22:43:01.133  INFO 18820 --- [main] glod.study.blog.dao.ArticleDaoTest       : Started ArticleDaoTest in 5.542 seconds (JVM running for 7.23)
+2020-10-19 22:43:02.237  INFO 18820 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-19 22:43:02.336  INFO 18820 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-10-19 22:43:03.127  INFO 18820 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-10-19 22:43:03.132  INFO 18820 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-19 22:43:03.132  INFO 18820 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-10-19 22:43:03.150  INFO 18820 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-10-19 22:45:58.200  INFO 17664 --- [main] g.study.blog.service.ArticleServiceTest  : Starting ArticleServiceTest on HP-LAPTOP with PID 17664 (started by 13536 in D:\Code\blog)
+2020-10-19 22:45:58.210  INFO 17664 --- [main] g.study.blog.service.ArticleServiceTest  : No active profile set, falling back to default profiles: default
+2020-10-19 22:46:01.764  INFO 17664 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7ae590f6, org.springframework.security.web.context.SecurityContextPersistenceFilter@15369d73, org.springframework.security.web.header.HeaderWriterFilter@17fbfb02, org.springframework.security.web.authentication.logout.LogoutFilter@11826398, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@33d230ce, org.springframework.security.web.session.ConcurrentSessionFilter@267891bf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9263c54, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e4eda17, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ab63838, org.springframework.security.web.session.SessionManagementFilter@6c8efde4, org.springframework.security.web.access.ExceptionTranslationFilter@1abcd059]
+2020-10-19 22:46:02.205  INFO 17664 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-19 22:46:02.942  INFO 17664 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.154.128:5672]
+2020-10-19 22:46:03.016  INFO 17664 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#28a6e171:0/SimpleConnection@2f6e92ca [delegate=amqp://guest@192.168.154.128:5672/, localPort= 2832]
+2020-10-19 22:46:03.091  INFO 17664 --- [main] g.study.blog.service.ArticleServiceTest  : Started ArticleServiceTest in 5.515 seconds (JVM running for 7.207)
+2020-10-19 22:46:04.124  INFO 17664 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-10-19 22:46:04.319  INFO 17664 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-10-19 22:46:05.086  INFO 17664 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-10-19 22:46:05.091  INFO 17664 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-19 22:46:05.091  INFO 17664 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-10-19 22:46:05.112  INFO 17664 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

@@ -22,9 +22,27 @@ public interface ArticleDao {
 
     /**
      * 通过用户id查询文章
-     * @param userId 用户id
+     * @param username 用户名
      * @return 文章信息
      */
-    @Select("select * from article where id = #{userId}")
-    List<Article> selectArticleByUserId(String userId);
+    @Select("select * from article where id in (select id from userinfo where username like #{username})")
+    List<Article> selectArticleByUsername(String username);
+
+    /**
+     * 根据文章标题模糊查询
+     * @param tittle 文章标题
+     * @return 文章信息
+     */
+    @Select("select * from article where tittle like #{tittle}")
+    List<Article> selectArticleByTittle(String tittle);
+
+    /**
+     * 模糊查询文章内容
+     * @param content 文章内容
+     * @return 文章信息
+     */
+    @Select("select * from article where content like #{content}")
+    List<Article> selectArticleByContent(String content);
+
+
 }
