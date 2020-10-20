@@ -24,7 +24,7 @@ public class UserInfoMessage {
         UserInfo userInfo = new UserInfo();
         userInfo.setUsername("Harlan");
         userInfo.setIp("127.0.0.1");
-        userInfo.setRegistrationTime(new Date());
+        userInfo.setRegistrationTime((java.sql.Date) new Date());
         userInfo.setEmail("isharlan.hu@gmail.com");
         template.convertAndSend("amq.direct", "user.email",userInfo);
     }

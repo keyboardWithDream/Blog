@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>注册</title>
+    <link th:replace="common">
 </head>
 <body>
+<!-- header -->
+<div th:replace="header"></div>
 <h1>注册</h1>
 <form th:action="@{/userInfo/registered}" method="post">
     <label for="username">用户名: </label><input id="username" type="text" name="username"><br>

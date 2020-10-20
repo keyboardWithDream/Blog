@@ -1,7 +1,9 @@
 package glod.study.blog.domain;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.io.Serializable;
-import java.util.Date;
+import java.sql.Date;
 
 /**
  * @Author Harlan
@@ -13,6 +15,7 @@ public class Comments implements Serializable {
     private String userId;
     private String articleId;
     private Long likeCount;
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
     private Date date;
     private String parentCommentId;
     private String content;

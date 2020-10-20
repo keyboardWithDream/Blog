@@ -24,10 +24,10 @@ public class UserServiceTest {
         userInfo.setPassword("123456");
         userInfo.setIp("127.0.0.1");
         userInfo.setEmail("test@tset.com");
-        userInfo.setBirthday(new Date());
+        userInfo.setBirthday((java.sql.Date) new Date());
         userInfo.setAge(1);
         userInfo.setNikeName("insert");
-        userInfo.setRegistrationTime(new Date());
+        userInfo.setRegistrationTime((java.sql.Date) new Date());
         userInfo.setUsername("testInsert");
         userInfoService.insertUserInfo(userInfo);
     }

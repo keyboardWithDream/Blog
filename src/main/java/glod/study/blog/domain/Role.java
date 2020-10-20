@@ -10,7 +10,7 @@ public class Role implements Serializable {
 
     private String id;
     private String role;
-    private String UserInfo;
+    private String userInfo;
 
     public String getId() {
         return id;
@@ -29,11 +29,11 @@ public class Role implements Serializable {
     }
 
     public String getUserInfo() {
-        return UserInfo;
+        return userInfo;
     }
 
     public void setUserInfo(String userInfo) {
-        UserInfo = userInfo;
+        this.userInfo = userInfo;
     }
 
     @Override
@@ -41,7 +41,7 @@ public class Role implements Serializable {
         return "Role{" +
                 "id='" + id + '\'' +
                 ", role='" + role + '\'' +
-                ", UserInfo='" + UserInfo + '\'' +
+                ", UserInfo='" + userInfo + '\'' +
                 '}';
     }
 }

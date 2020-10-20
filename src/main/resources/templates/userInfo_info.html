@@ -9,11 +9,54 @@
 <!-- header -->
 <div th:replace="header"></div>
 
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-1">
+            <!-- sidebar -->
+            <div th:replace="sidebar"></div>
+        </div>
+
+        <div class="col-10">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1" th:text="${articleList.get(0).tittle}"></h5>
+                        <small th:text="${articleList.get(0).date}"></small>
+                    </div>
+                    <p class="mb-1" th:text="${articleList.get(0).content}"></p>
+                    <small th:text="${articleList.get(0).id}"></small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small class="text-muted">3 days ago</small>
+                    </div>
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
+                        blandit.</p>
+                    <small class="text-muted">Donec id elit non mi porta.</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small class="text-muted">3 days ago</small>
+                    </div>
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
+                        blandit.</p>
+                    <small class="text-muted">Donec id elit non mi porta.</small>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-1"></div>
+
+    </div>
+</div>
 <p th:text="${#authorization.getAuthentication().getName()}"></p>
 <table>
     <tr th:each="article:${articleList}">
-        <td th:text="${article.getTittle()}"></td>
-        <td th:text="${article.getContent()}"></td>
+        <td th:text="${article.tittle}"></td>
+        <td th:text="${article.content}"></td>
     </tr>
 </table>
 </body>

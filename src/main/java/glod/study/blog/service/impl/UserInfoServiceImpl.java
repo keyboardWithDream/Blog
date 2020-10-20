@@ -53,7 +53,7 @@ public class UserInfoServiceImpl implements UserInfoService {
         userInfo.setPassword(passwordEncoder.encode(password));
         //设置注册时间
         Date registrationTime = new Date();
-        userInfo.setRegistrationTime(registrationTime);
+        userInfo.setRegistrationTime((java.sql.Date) registrationTime);
         //计算用户年龄
         Date birthday = userInfo.getBirthday();
         int age;

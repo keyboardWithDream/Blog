@@ -3,7 +3,7 @@ package glod.study.blog.domain;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.sql.Date;
 import java.util.List;
 
 /**

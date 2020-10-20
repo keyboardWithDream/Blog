@@ -64,6 +64,12 @@ spring:
   thymeleaf:
     cache: false
 
+  # mvc配置
+  mvc:
+    format:
+      date: yyyy-MM-dd
+      date-time: yyyy-MM-dd HH:mm:ss
+
 
 # 日志配置
 logging:
