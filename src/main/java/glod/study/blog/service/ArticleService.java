@@ -36,4 +36,18 @@ public interface ArticleService {
      * @return 文章信息
      */
     List<Article> selectArticleByUsername(String username);
+
+    /**
+     * 通过标签名查询文章
+     * @param labelName 标签名
+     * @return 文章信息
+     */
+    List<Article> selectArticleByLabelsName(String labelName);
+
+    /**
+     * 通过类别模糊查询文章
+     * @param sortName 类别名称
+     * @return 文章信息
+     */
+    List<Article> selectArticleBySortName(String sortName);
 }

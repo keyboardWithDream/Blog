@@ -24,4 +24,12 @@ public class ArticleServiceTest {
             System.out.println(article);
         }
     }
+
+    @Test
+    public void testSelectByArticleBySortName(){
+        List<Article> articleList = articleService.selectArticleBySortName("测试");
+        for (Article article : articleList) {
+            System.out.println(article);
+        }
+    }
 }

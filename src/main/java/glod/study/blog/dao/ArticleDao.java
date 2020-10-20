@@ -1,6 +1,8 @@
 package glod.study.blog.dao;
 
 import glod.study.blog.domain.Article;
+import org.apache.ibatis.annotations.Result;
+import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 
@@ -45,4 +47,25 @@ public interface ArticleDao {
     List<Article> selectArticleByContent(String content);
 
 
+    /**
+     * 通过标签名模糊查询文章
+     * @param labelName 标签名
+     * @return 文章信息
+     */
+    @Select("select * from article where id in (" +
+            "select article_id from article_label where label_id in (" +
+            "select id from labels where name like #{name}" +
+            "))")
+    List<Article> selectArticleByLabelsName(String labelName);
+
+    /**
+     * 通过类别模糊查询文章
+     * @param sortName 类别名称
+     * @return 文章信息
+     */
+    @Select("select * from article where id in (" +
+            "select article_id from article_sort where sort_id in (" +
+            "select id from sort where name like #{sortName}" +
+            "))")
+    List<Article> selectArticleBySortName(String sortName);
 }

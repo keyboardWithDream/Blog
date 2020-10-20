@@ -74,5 +74,13 @@ public interface UserInfoDao {
      * @param email 邮箱
      */
     @Update("update userinfo set email = #{email} where username = #{username}")
-    void updateUserInfoEmailByUsername(@PathParam("username") String username,@PathParam("eamil") String email);
+    void updateUserInfoEmailByUsername(@PathParam("username") String username,@PathParam("email") String email);
+
+    /**
+     * 通过id查询用户
+     * @param id 用户id
+     * @return 用户信息
+     */
+    @Select("select * from userinfo where id = #{id}")
+    UserInfo selectUserInfoById(String id);
 }

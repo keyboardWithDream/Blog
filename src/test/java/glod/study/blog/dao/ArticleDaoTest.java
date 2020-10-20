@@ -56,4 +56,21 @@ public class ArticleDaoTest {
             System.out.println(article);
         }
     }
+
+
+    @Test
+    public void testSelectArticleByLabelsName(){
+        List<Article> articleList = articleDao.selectArticleByLabelsName("标签测试");
+        for (Article article : articleList) {
+            System.out.println(article);
+        }
+    }
+
+    @Test
+    public void testSelectArticleBySortName(){
+        List<Article> articleList = articleDao.selectArticleBySortName("文章分类名称测试");
+        for (Article article : articleList) {
+            System.out.println(article);
+        }
+    }
 }

@@ -52,4 +52,10 @@ public class UserInfoDaoTest {
     public void testUpdateEmailByUsername(){
         userInfoDao.updateUserInfoEmailByUsername("hello", "isharlan.hu@gmail.com");
     }
+
+    @Test
+    public void testSelectUserInfoById(){
+        UserInfo userInfo = userInfoDao.selectUserInfoById("1");
+        System.out.println(userInfo);
+    }
 }

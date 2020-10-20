@@ -38,6 +38,18 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     @Override
+    public List<Article> selectArticleByLabelsName(String labelName) {
+        String l = "%"+labelName+"%";
+        return articleDao.selectArticleByLabelsName(l);
+    }
+
+    @Override
+    public List<Article> selectArticleBySortName(String sortName) {
+        String s = "%"+sortName+"%";
+        return articleDao.selectArticleBySortName(s);
+    }
+
+    @Override
     public List<Article> selectArticleByContent(String content) {
         String c = "%"+content+"%";
         return articleDao.selectArticleByContent(c);
