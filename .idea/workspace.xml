@@ -22,12 +22,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9229ff63-3063-44c1-bf3b-447100f84ee3" name="Default Changelist" comment="修改日期类为sql包下Date + 博文页面展示测试">
-      <change afterPath="$PROJECT_DIR$/src/main/java/glod/study/blog/config/MySwaggerConfig.java" afterDir="false" />
+    <list default="true" id="9229ff63-3063-44c1-bf3b-447100f84ee3" name="Default Changelist" comment="swagger接口测试配置">
+      <change afterPath="$PROJECT_DIR$/src/main/java/glod/study/blog/controller/SortController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/glod/study/blog/dao/SortDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/glod/study/blog/service/SortService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/glod/study/blog/service/impl/SortServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/glod/study/blog/service/SortServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system.log.2020-10-20.0.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/blog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userInfo_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userInfo_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/glod/study/blog/dao/CommentsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/glod/study/blog/dao/CommentsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/sidebar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system.log" beforeDir="false" afterPath="$PROJECT_DIR$/system.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +46,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -98,15 +103,18 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Code\blog\src\main\resources\templates" />
-      <recent name="D:\Code\blog\src\main\resources\templates\common" />
-      <recent name="D:\Code\blog\src\main\resources\templates\userInfo" />
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="glod.study.blog.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Code\blog\src\main\resources\templates\common" />
       <recent name="D:\Code\blog\src\main\resources\templates" />
       <recent name="D:\Code\blog\src\main\resources\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Code\blog\src\main\resources\templates" />
+      <recent name="D:\Code\blog\src\main\resources\templates\common" />
+      <recent name="D:\Code\blog\src\main\resources\templates\userInfo" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -115,31 +123,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.BlogApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArticleDaoTest.testSelectArticleByLabelsName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="blog" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="glod.study.blog.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="glod.study.blog.dao" />
-      <option name="MAIN_CLASS_NAME" value="glod.study.blog.dao.ArticleDaoTest" />
-      <option name="METHOD_NAME" value="testSelectArticleByLabelsName" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -176,6 +166,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SortServiceTest.testSelectAllSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="glod.study.blog.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="glod.study.blog.service" />
+      <option name="MAIN_CLASS_NAME" value="glod.study.blog.service.SortServiceTest" />
+      <option name="METHOD_NAME" value="testSelectAllSort" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserInfoDaoTest.testSelectUserInfoById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="blog" />
       <extension name="coverage">
@@ -206,19 +212,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ArticleDaoTest.testSelectArticleByLabelsName" />
       <item itemvalue="JUnit.ArticleDaoTest.testSelectArticleBySortName" />
-      <item itemvalue="Spring Boot.BlogApplication" />
       <item itemvalue="JUnit.ArticleServiceTest.testSelectByArticleBySortName" />
       <item itemvalue="JUnit.UserInfoDaoTest.testSelectUserInfoById" />
+      <item itemvalue="JUnit.SortServiceTest.testSelectAllSort" />
+      <item itemvalue="Spring Boot.BlogApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.BlogApplication" />
+        <item itemvalue="JUnit.SortServiceTest.testSelectAllSort" />
         <item itemvalue="JUnit.UserInfoDaoTest.testSelectUserInfoById" />
         <item itemvalue="JUnit.ArticleServiceTest.testSelectByArticleBySortName" />
         <item itemvalue="JUnit.ArticleDaoTest.testSelectArticleBySortName" />
-        <item itemvalue="JUnit.ArticleDaoTest.testSelectArticleByLabelsName" />
       </list>
     </recent_temporary>
   </component>
@@ -245,7 +251,8 @@
       <workItem from="1603114397500" duration="3896000" />
       <workItem from="1603118337398" duration="653000" />
       <workItem from="1603119471534" duration="6348000" />
-      <workItem from="1603179041565" duration="8480000" />
+      <workItem from="1603179041565" duration="13437000" />
+      <workItem from="1603242175876" duration="851000" />
     </task>
     <task id="LOCAL-00001" summary="个人博客">
       <created>1602941695860</created>
@@ -359,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603201523161</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="swagger接口测试配置">
+      <created>1603207488901</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1603207488901</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,7 +409,8 @@
     <MESSAGE value="侧边栏抽取" />
     <MESSAGE value="用户及博文部分CRUD" />
     <MESSAGE value="修改日期类为sql包下Date + 博文页面展示测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改日期类为sql包下Date + 博文页面展示测试" />
+    <MESSAGE value="swagger接口测试配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="swagger接口测试配置" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="158" width="1092" height="791" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602837799374">
@@ -406,46 +421,50 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="973" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1602950824221" />
-    <state x="880" y="325" width="687" height="590" key="#com.intellij.ide.util.MemberChooser" timestamp="1603198747971">
+    <state x="880" y="325" width="687" height="590" key="#com.intellij.ide.util.MemberChooser" timestamp="1603209639876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="880" y="325" width="687" height="590" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603198747971" />
-    <state x="577" y="129" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602840719210">
+    <state x="880" y="325" width="687" height="590" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603209639876" />
+    <state x="830" y="380" width="447" height="274" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1603209554177">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="577" y="129" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602840719210" />
-    <state width="1877" height="367" key="GridCell.Tab.0.bottom" timestamp="1603205478975">
+    <state x="830" y="380" width="447" height="274" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1603209554177" />
+    <state x="577" y="129" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603210066098">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="367" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603205478975" />
-    <state width="1877" height="367" key="GridCell.Tab.0.center" timestamp="1603205478975">
+    <state x="577" y="129" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603210066098" />
+    <state width="1877" height="248" key="GridCell.Tab.0.bottom" timestamp="1603212739690">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="367" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603205478975" />
-    <state width="1877" height="367" key="GridCell.Tab.0.left" timestamp="1603205478975">
+    <state width="1877" height="248" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603212739690" />
+    <state width="1877" height="248" key="GridCell.Tab.0.center" timestamp="1603212739689">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="367" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603205478975" />
-    <state width="1877" height="367" key="GridCell.Tab.0.right" timestamp="1603205478975">
+    <state width="1877" height="248" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603212739689" />
+    <state width="1877" height="248" key="GridCell.Tab.0.left" timestamp="1603212739689">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="367" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603205478975" />
-    <state width="1877" height="367" key="GridCell.Tab.1.bottom" timestamp="1603205478976">
+    <state width="1877" height="248" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603212739689" />
+    <state width="1877" height="248" key="GridCell.Tab.0.right" timestamp="1603212739689">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="367" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603205478975" />
-    <state width="1877" height="367" key="GridCell.Tab.1.center" timestamp="1603205478975">
+    <state width="1877" height="248" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603212739689" />
+    <state width="1877" height="248" key="GridCell.Tab.1.bottom" timestamp="1603212739690">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="367" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603205478975" />
-    <state width="1877" height="367" key="GridCell.Tab.1.left" timestamp="1603205478975">
+    <state width="1877" height="248" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603212739690" />
+    <state width="1877" height="248" key="GridCell.Tab.1.center" timestamp="1603212739690">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="367" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603205478975" />
-    <state width="1877" height="367" key="GridCell.Tab.1.right" timestamp="1603205478975">
+    <state width="1877" height="248" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603212739690" />
+    <state width="1877" height="248" key="GridCell.Tab.1.left" timestamp="1603212739690">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="367" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603205478975" />
+    <state width="1877" height="248" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603212739690" />
+    <state width="1877" height="248" key="GridCell.Tab.1.right" timestamp="1603212739690">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="248" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603212739690" />
     <state x="518" y="298" key="Maven.ArtifactSearchDialog" timestamp="1603108639648">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -454,10 +473,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="182" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602817507387" />
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1603201604533">
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1603207497918">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603201604533" />
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603207497918" />
     <state x="1158" y="253" width="434" height="459" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1602943026989">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

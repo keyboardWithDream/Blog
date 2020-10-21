@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="ch" xmlns:th="http://www.thymeleaf.org">
-    <div th:formtarget="sidebar" class="list-group" id="list-tab" role="tablist">
-        <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list"
-           href="#list-home" role="tab" aria-controls="home">Home</a>
-        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
-           href="#list-profile" role="tab" aria-controls="profile">Profile</a>
-        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
-           href="#list-messages" role="tab" aria-controls="messages">Messages</a>
-        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-           href="#list-settings" role="tab" aria-controls="settings">Settings</a>
-    </div>
+
+<div th:fragment="sidebar" th:id="sort-div" th:formtarget="sidebar" class="list-group" id="list-tab" role="tablist">
+    <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list"
+       href="#list-home" role="tab" aria-controls="home">Home</a>
+</div>
+
 </html>
+
+<script>
+    $(function () {
+        $.get("http://localhost/sort/all", function (sortList) {
+            for (const sort of sortList) {
+                let $a = $("<a class='list-group-item list-group-item-action' id='list-home-list' data-toggle='list'></a>")
+                    .attr("href", "#").text(sort.name);
+                $("#sort-div").append($a);
+            }
+        })
+    })
+</script>
