@@ -1,6 +1,5 @@
 package glod.study.blog.service.impl;
 
-import glod.study.blog.dao.ArticleDao;
 import glod.study.blog.dao.RoleDao;
 import glod.study.blog.dao.UserInfoDao;
 import glod.study.blog.domain.Role;
@@ -45,15 +44,15 @@ public class UserInfoServiceImpl implements UserInfoService {
      */
     @Override
     public UserInfo insertUserInfo(UserInfo userInfo) throws Exception {
-        //设置用户id(UUID)
+        //设置用户Token(UUID)
         String uuid = UUID.randomUUID().toString().replace("-", "");
-        userInfo.setId(uuid);
+        userInfo.setToken(uuid);
         //用户密码加密
         String password = userInfo.getPassword();
         userInfo.setPassword(passwordEncoder.encode(password));
         //设置注册时间
         Date registrationTime = new Date();
-        userInfo.setRegistrationTime((java.sql.Date) registrationTime);
+        userInfo.setRegistrationTime(registrationTime);
         //计算用户年龄
         Date birthday = userInfo.getBirthday();
         int age;
@@ -65,11 +64,12 @@ public class UserInfoServiceImpl implements UserInfoService {
         userInfo.setAge(age);
         //设置默认头像
         String defaultPhoto = "default";
-        userInfo.setProfilePhoto(defaultPhoto);
+        userInfo.setAvatar(defaultPhoto);
+        System.out.println(userInfo);
         //添加用户信息
         userInfoDao.insertUserInfo(userInfo);
         //为用户添加游客角色
-        userInfoDao.insertUserInfoAndRole(userInfo.getId(), "1");
+        userInfoDao.insertUserInfoAndRole(userInfo.getUsername(), "TOURIST");
         //发送注册邮件
         rabbitTemplate.convertAndSend("amq.direct","user.email", userInfo);
         return userInfo;
@@ -91,7 +91,7 @@ public class UserInfoServiceImpl implements UserInfoService {
      */
     @Override
     public void activeUserInfo(String id) {
-        roleDao.updateRoleByUserId(id, "2");
+        roleDao.updateRoleByUsername(id, "2");
     }
 
     /**
@@ -106,7 +106,7 @@ public class UserInfoServiceImpl implements UserInfoService {
         if (!userInfo.getEmail().equals(email)){
             userInfoDao.updateUserInfoEmailByUsername(username, email);
             //重新进入未激活状态
-            roleDao.updateRoleByUserId(userInfo.getId(), "1");
+            roleDao.updateRoleByUsername(userInfo.getToken(), "1");
             rabbitTemplate.convertAndSend("amq.direct", "user.email", userInfo);
         }
     }
@@ -139,7 +139,7 @@ public class UserInfoServiceImpl implements UserInfoService {
     public List<SimpleGrantedAuthority> getAuthority(List<Role> roleList){
         List<SimpleGrantedAuthority> list = new ArrayList<>();
         for (Role role : roleList) {
-            list.add(new SimpleGrantedAuthority("ROLE_" + role.getRole()));
+            list.add(new SimpleGrantedAuthority("ROLE_" + role.getRoleName()));
         }
         return list;
     }

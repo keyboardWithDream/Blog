@@ -3,7 +3,7 @@
 
 <div th:fragment="sidebar" th:id="sort-div" th:formtarget="sidebar" class="list-group" id="list-tab" role="tablist">
     <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list"
-       href="#list-home" role="tab" aria-controls="home">Home</a>
+       href="http://localhost/article/all" role="tab" aria-controls="home">所有分类</a>
 </div>
 
 </html>
@@ -13,7 +13,7 @@
         $.get("http://localhost/sort/all", function (sortList) {
             for (const sort of sortList) {
                 let $a = $("<a class='list-group-item list-group-item-action' id='list-home-list' data-toggle='list'></a>")
-                    .attr("href", "#").text(sort.name);
+                    .attr("href", "http://localhost/article/sort/"+sort.name).text(sort.name);
                 $("#sort-div").append($a);
             }
         })

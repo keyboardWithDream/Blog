@@ -1,6 +1,7 @@
 package glod.study.blog.domain;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * @Author Harlan
@@ -8,40 +9,40 @@ import java.io.Serializable;
  */
 public class Role implements Serializable {
 
-    private String id;
-    private String role;
-    private String userInfo;
+    private String roleName;
+    private String description;
+    private List<UserInfo> userInfo;
 
-    public String getId() {
-        return id;
+    public String getRoleName() {
+        return roleName;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setRoleName(String roleName) {
+        this.roleName = roleName;
     }
 
-    public String getRole() {
-        return role;
+    public String getDescription() {
+        return description;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public String getUserInfo() {
+    public List<UserInfo> getUserInfo() {
         return userInfo;
     }
 
-    public void setUserInfo(String userInfo) {
+    public void setUserInfo(List<UserInfo> userInfo) {
         this.userInfo = userInfo;
     }
 
     @Override
     public String toString() {
         return "Role{" +
-                "id='" + id + '\'' +
-                ", role='" + role + '\'' +
-                ", UserInfo='" + userInfo + '\'' +
+                "roleName='" + roleName + '\'' +
+                ", description='" + description + '\'' +
+                ", userInfo=" + userInfo +
                 '}';
     }
 }

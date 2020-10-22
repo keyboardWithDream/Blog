@@ -33,11 +33,12 @@ public class MailComponent {
     ))
     public void activeUser(UserInfo userInfo){
         MimeMessage mimeMessage = mailSender.createMimeMessage();
+        System.out.println(userInfo);
         //发送高级邮件
         try {
             MimeMessageHelper messageHelper = new MimeMessageHelper(mimeMessage, false);
             messageHelper.setSubject("验证");
-            messageHelper.setText("用户名：" + userInfo.getUsername() + "验证链接：<a href='http://localhost/userInfo/active/"+userInfo.getId()+"'>立即激活</a>" , true);
+            messageHelper.setText("用户名：" + userInfo.getUsername() + "验证链接：<a href='http://localhost/userInfo/active/"+userInfo.getToken()+"'>立即激活</a>" , true);
             messageHelper.setTo(userInfo.getEmail());
             messageHelper.setFrom("i102443@163.com", "1024.glod博客");
             mailSender.send(mimeMessage);

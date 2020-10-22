@@ -20,20 +20,17 @@ public class UserServiceTest {
     @Test
     public void insertUserInfoTest() throws Exception {
         UserInfo userInfo = new UserInfo();
-        userInfo.setId("testInsert");
+        userInfo.setUsername("testInsert");
         userInfo.setPassword("123456");
         userInfo.setIp("127.0.0.1");
-        userInfo.setEmail("test@tset.com");
-        userInfo.setBirthday((java.sql.Date) new Date());
-        userInfo.setAge(1);
-        userInfo.setNikeName("insert");
-        userInfo.setRegistrationTime((java.sql.Date) new Date());
-        userInfo.setUsername("testInsert");
+        userInfo.setPhone("12311111111");
+        userInfo.setEmail("isharlan.hu@gmail.com");
+        userInfo.setBirthday(new Date());
         userInfoService.insertUserInfo(userInfo);
     }
 
     @Test
     public void testUpdateEmailByUsername(){
-        userInfoService.updateUserInfoEmailByUsername("hello", "1353662613@qq.com");
+        userInfoService.updateUserInfoEmailByUsername("testInsert", "isharlan.hu@gmail.com");
     }
 }

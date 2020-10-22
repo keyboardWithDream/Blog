@@ -30,15 +30,17 @@ public class UserInfoDaoTest {
     @Test
     public void testInsertUserInfo() throws Exception{
         UserInfo userInfo = new UserInfo();
-        userInfo.setId("testInsert");
+        userInfo.setUsername("testInsert");
+        userInfo.setToken("testInsert");
         userInfo.setPassword("123456");
         userInfo.setIp("127.0.0.1");
-        userInfo.setEmail("test@tset.com");
-        userInfo.setBirthday((java.sql.Date) new Date());
+        userInfo.setPhone("11111111111");
+        userInfo.setEmail("isharlan.hu@gmail.com");
+        userInfo.setBirthday(new Date());
         userInfo.setAge(1);
-        userInfo.setNikeName("insert");
-        userInfo.setRegistrationTime((java.sql.Date) new Date());
-        userInfo.setUsername("testInsert");
+        userInfo.setRegistrationTime(new Date());
+        userInfo.setAvatar("default");
+        userInfo.setIntroduction("测试内容!");
         userInfoDao.insertUserInfo(userInfo);
     }
 
@@ -50,12 +52,6 @@ public class UserInfoDaoTest {
 
     @Test
     public void testUpdateEmailByUsername(){
-        userInfoDao.updateUserInfoEmailByUsername("hello", "isharlan.hu@gmail.com");
-    }
-
-    @Test
-    public void testSelectUserInfoById(){
-        UserInfo userInfo = userInfoDao.selectUserInfoById("1");
-        System.out.println(userInfo);
+        userInfoDao.updateUserInfoEmailByUsername("testInsert", "0000@000");
     }
 }

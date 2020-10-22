@@ -1,10 +1,9 @@
 package glod.study.blog.domain;
 
-import org.springframework.format.annotation.DateTimeFormat;
-
 import java.io.Serializable;
-import java.sql.Date;
+import java.util.Date;
 import java.util.List;
+
 
 /**
  * @Author Harlan
@@ -12,44 +11,20 @@ import java.util.List;
  */
 public class UserInfo implements Serializable {
 
-    private String id;
-    private String ip;
     private String username;
     private String password;
+    private String token;
     private String email;
-    private String profilePhoto;
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private Date registrationTime;
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private String phone;
+    private Integer sex;
     private Date birthday;
     private Integer age;
-    private String nikeName;
+    private String avatar;
+    private String introduction;
+    private String ip;
+    private Date registrationTime;
     private List<Role> roleList;
     private List<Article> articleList;
-
-    public List<Role> getRoleList() {
-        return roleList;
-    }
-
-    public void setRoleList(List<Role> roleList) {
-        this.roleList = roleList;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getIp() {
-        return ip;
-    }
-
-    public void setIp(String ip) {
-        this.ip = ip;
-    }
 
     public String getUsername() {
         return username;
@@ -67,6 +42,14 @@ public class UserInfo implements Serializable {
         this.password = password;
     }
 
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
     public String getEmail() {
         return email;
     }
@@ -75,12 +58,12 @@ public class UserInfo implements Serializable {
         this.email = email;
     }
 
-    public String getProfilePhoto() {
-        return profilePhoto;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setProfilePhoto(String profilePhoto) {
-        this.profilePhoto = profilePhoto;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public Date getRegistrationTime() {
@@ -89,6 +72,14 @@ public class UserInfo implements Serializable {
 
     public void setRegistrationTime(Date registrationTime) {
         this.registrationTime = registrationTime;
+    }
+
+    public Integer getSex() {
+        return sex;
+    }
+
+    public void setSex(Integer sex) {
+        this.sex = sex;
     }
 
     public Date getBirthday() {
@@ -107,12 +98,39 @@ public class UserInfo implements Serializable {
         this.age = age;
     }
 
-    public String getNikeName() {
-        return nikeName;
+    public String getAvatar() {
+        return avatar;
     }
 
-    public void setNikeName(String nikeName) {
-        this.nikeName = nikeName;
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
+    public String getIntroduction() {
+        if (introduction == null){
+            return "这个用户还未设置简介";
+        }
+        return introduction;
+    }
+
+    public void setIntroduction(String introduction) {
+        this.introduction = introduction;
+    }
+
+    public List<Role> getRoleList() {
+        return roleList;
+    }
+
+    public void setRoleList(List<Role> roleList) {
+        this.roleList = roleList;
+    }
+
+    public String getIp() {
+        return ip;
+    }
+
+    public void setIp(String ip) {
+        this.ip = ip;
     }
 
     public List<Article> getArticleList() {
@@ -126,16 +144,18 @@ public class UserInfo implements Serializable {
     @Override
     public String toString() {
         return "UserInfo{" +
-                "id='" + id + '\'' +
-                ", ip='" + ip + '\'' +
-                ", username='" + username + '\'' +
+                "username='" + username + '\'' +
                 ", password='" + password + '\'' +
+                ", token='" + token + '\'' +
                 ", email='" + email + '\'' +
-                ", profilePhoto='" + profilePhoto + '\'' +
-                ", registrationTime=" + registrationTime +
+                ", phone='" + phone + '\'' +
+                ", sex=" + sex +
                 ", birthday=" + birthday +
                 ", age=" + age +
-                ", nikeName='" + nikeName + '\'' +
+                ", avatar='" + avatar + '\'' +
+                ", introduction='" + introduction + '\'' +
+                ", ip='" + ip + '\'' +
+                ", registrationTime=" + registrationTime +
                 ", roleList=" + roleList +
                 ", articleList=" + articleList +
                 '}';

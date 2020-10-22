@@ -9,54 +9,43 @@
 <!-- header -->
 <div th:replace="header"></div>
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
 
-        <div class="col-1">
+        <div class="col-2">
             <!-- sidebar -->
             <div th:replace="sidebar"></div>
         </div>
 
-        <div class="col-10">
-            <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action">
+
+        <div class="col-8">
+
+            <div th:if="${articleList.size() > 0}" class="list-group">
+                <a th:each="article:${articleList}" href="#"  style="margin-bottom: 10px" class="list-group-item list-group-item-action">
                     <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1" th:text="${articleList.get(0).tittle}"></h5>
-                        <small th:text="${articleList.get(0).date}"></small>
+                        <h4 class="mb-1" th:text="${article.tittle}"></h4>
+                        <div style="float: left" th:if="${article.labelsList.size() > 0}">
+                            <span th:each="label:${article.labelsList}" class="badge badge-pill badge-primary" th:text="${label.name}"></span>
+                        </div>
+                        <small th:text="${article.date}"></small>
                     </div>
-                    <p class="mb-1" th:text="${articleList.get(0).content}"></p>
-                    <small th:text="${articleList.get(0).id}"></small>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">List group item heading</h5>
-                        <small class="text-muted">3 days ago</small>
+                    <div th:name="content_p" class="mb-1 text-truncate text-justify" th:text="${article.content}"></div>
+                    <img th:src="@{/images/defult.png}" alt="用户头像" class="rounded-circle"
+                         style="height: 30px;width: 30px" src="#">
+                    <small th:text="${article.username}" style="font-size: 20px"></small>
+                    <div style="float: right">
+                        <img src="#" th:src="@{/assets/icons/hand-rhumbs-up.svg}" alt="点赞"><small th:text="${article.likeCount}"></small>
+                        <img src="#" th:src="@{/assets/icons/eye-fill.svg}" alt="浏览"><small th:text="${article.views}"></small>
+                        <img src="#" th:src="@{/assets/icons/chat-dots-fill.svg}" alt="评论"><small th:text="${article.commentCount}"></small>
                     </div>
-                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                        blandit.</p>
-                    <small class="text-muted">Donec id elit non mi porta.</small>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">List group item heading</h5>
-                        <small class="text-muted">3 days ago</small>
-                    </div>
-                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                        blandit.</p>
-                    <small class="text-muted">Donec id elit non mi porta.</small>
                 </a>
             </div>
-        </div>
-        <div class="col-1"></div>
 
+        </div>
+        <div class="col-2"></div>
     </div>
 </div>
-<p th:text="${#authorization.getAuthentication().getName()}"></p>
-<table>
-    <tr th:each="article:${articleList}">
-        <td th:text="${article.tittle}"></td>
-        <td th:text="${article.content}"></td>
-    </tr>
-</table>
 </body>
+<script>
+</script>
 </html>

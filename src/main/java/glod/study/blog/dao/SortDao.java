@@ -17,6 +17,6 @@ public interface SortDao {
      * 查询所有类别
      * @return 类别
      */
-    @Select("select * from sort")
+    @Select("select * from t_sort")
     List<Sort> selectAllSort();
 }

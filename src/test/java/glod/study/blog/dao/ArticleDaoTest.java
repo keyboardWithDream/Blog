@@ -28,18 +28,17 @@ public class ArticleDaoTest {
         }
     }
 
-    /**
-     * 通过用户名查询文章
-     */
     @Test
-    public void testSelectArticleByUserId(){
-        List<Article> articleList = articleDao.selectArticleByUsername("test");
+    public void testSelectArticleByTittle(){
+        List<Article> articleList = articleDao.selectArticleByTittle("%测%");
         for (Article article : articleList) {
             System.out.println(article);
         }
     }
 
-
+    /**
+     * 通过用户名查询文章
+     */
     @Test
     public void testSelectArticleByUsername(){
         List<Article> articleList = articleDao.selectArticleByUsername("%t%");
@@ -51,7 +50,7 @@ public class ArticleDaoTest {
 
     @Test
     public void testSelectArticleByContent(){
-        List<Article> articleList = articleDao.selectArticleByContent("%感谢%");
+        List<Article> articleList = articleDao.selectArticleByContent("%Java%");
         for (Article article : articleList) {
             System.out.println(article);
         }
@@ -60,7 +59,7 @@ public class ArticleDaoTest {
 
     @Test
     public void testSelectArticleByLabelsName(){
-        List<Article> articleList = articleDao.selectArticleByLabelsName("标签测试");
+        List<Article> articleList = articleDao.selectArticleByLabelsName("%标签测试%");
         for (Article article : articleList) {
             System.out.println(article);
         }
@@ -68,7 +67,7 @@ public class ArticleDaoTest {
 
     @Test
     public void testSelectArticleBySortName(){
-        List<Article> articleList = articleDao.selectArticleBySortName("文章分类名称测试");
+        List<Article> articleList = articleDao.selectArticleBySortName("%类别测试%");
         for (Article article : articleList) {
             System.out.println(article);
         }

@@ -16,18 +16,18 @@ import java.util.List;
 public interface RoleDao {
 
     /**
-     * 通过用户id查询角色
-     * @param userId 用户id
+     * 通过用户名查询角色
+     * @param username 用户username
      * @return 角色信息
      */
-    @Select("select * from roles where id in (select role_id from user_role where user_id = #{userId})")
-    List<Role> selectRoleByUserId(String userId);
+    @Select("select * from t_role where role_name in (select role_name from t_userinfo_role where username = #{username})")
+    List<Role> selectRoleByUsername(String username);
 
     /**
      * 更改用户权限
-     * @param userId 用户id
-     * @param roleId 权限id
+     * @param username 用户名
+     * @param roleName 权限名
      */
-    @Update("update user_role set role_id = #{roleId} where user_id = #{userId}")
-    void updateRoleByUserId(@Param("userId") String userId, @Param("roleId") String roleId);
+    @Update("update t_userinfo_role set role_name = #{roleName} where username = #{username}")
+    void updateRoleByUsername(@Param("username") String username, @Param("roleName") String roleName);
 }

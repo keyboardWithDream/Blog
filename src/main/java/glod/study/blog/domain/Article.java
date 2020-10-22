@@ -1,9 +1,8 @@
 package glod.study.blog.domain;
 
-import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
-import java.sql.Date;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -13,16 +12,15 @@ import java.util.List;
 public class Article implements Serializable {
 
     private String id;
-    private String userId;
+    private String username;
+    private String sortName;
     private String tittle;
     private String content;
     private Long views;
     private Long commentCount;
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
-    private Date date;
     private Long likeCount;
-    private List<Labels> labelsList;
-    private List<Sort> sortList;
+    private Date date;
+    private List<Label> labelList;
 
     public String getId() {
         return id;
@@ -32,12 +30,12 @@ public class Article implements Serializable {
         this.id = id;
     }
 
-    public String getUserId() {
-        return userId;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getTittle() {
@@ -88,35 +86,27 @@ public class Article implements Serializable {
         this.likeCount = likeCount;
     }
 
-    public List<Labels> getLabelsList() {
-        return labelsList;
+    public List<Label> getLabelsList() {
+        return labelList;
     }
 
-    public void setLabelsList(List<Labels> labelsList) {
-        this.labelsList = labelsList;
-    }
-
-    public List<Sort> getSortList() {
-        return sortList;
-    }
-
-    public void setSortList(List<Sort> sortList) {
-        this.sortList = sortList;
+    public void setLabelsList(List<Label> labelList) {
+        this.labelList = labelList;
     }
 
     @Override
     public String toString() {
         return "Article{" +
                 "id='" + id + '\'' +
-                ", userId='" + userId + '\'' +
+                ", username='" + username + '\'' +
+                ", sortName='" + sortName + '\'' +
                 ", tittle='" + tittle + '\'' +
                 ", content='" + content + '\'' +
                 ", views=" + views +
                 ", commentCount=" + commentCount +
-                ", date=" + date +
                 ", likeCount=" + likeCount +
-                ", labelsList=" + labelsList +
-                ", sortList=" + sortList +
+                ", date=" + date +
+                ", labelList=" + labelList +
                 '}';
     }
 }

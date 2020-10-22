@@ -18,10 +18,15 @@ public class RoleDaoTest {
     private RoleDao roleDao;
 
     @Test
-    public void testSelectRoleByUserInfoId(){
-        List<Role> roles = roleDao.selectRoleByUserId("0");
+    public void testSelectRoleByUsername(){
+        List<Role> roles = roleDao.selectRoleByUsername("admin");
         for (Role role : roles) {
             System.out.println(role);
         }
+    }
+
+    @Test
+    public void updateRoleByUsername(){
+        roleDao.updateRoleByUsername("test", "USER");
     }
 }

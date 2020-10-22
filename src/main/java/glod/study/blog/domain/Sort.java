@@ -9,20 +9,11 @@ import java.util.List;
  */
 public class Sort implements Serializable {
 
-    private String id;
     private String name;
-    private String alias;
     private String description;
     private String parentSortId;
     private List<Article> articleList;
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
@@ -30,14 +21,6 @@ public class Sort implements Serializable {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getAlias() {
-        return alias;
-    }
-
-    public void setAlias(String alias) {
-        this.alias = alias;
     }
 
     public String getDescription() {
@@ -67,9 +50,7 @@ public class Sort implements Serializable {
     @Override
     public String toString() {
         return "Sort{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", alias='" + alias + '\'' +
+                "name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", parentSortId='" + parentSortId + '\'' +
                 ", articleList=" + articleList +

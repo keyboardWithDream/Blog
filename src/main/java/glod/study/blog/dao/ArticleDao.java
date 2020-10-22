@@ -1,6 +1,7 @@
 package glod.study.blog.dao;
 
 import glod.study.blog.domain.Article;
+import org.apache.ibatis.annotations.Many;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
@@ -19,15 +20,23 @@ public interface ArticleDao {
      * 查询所有文章
      * @return 文章list
      */
-    @Select("select * from article")
+    @Select("select * from t_article")
+    @Results({
+            @Result(property = "id", column = "id"),
+            @Result(property = "labelList", column = "id", javaType = List.class, many = @Many(select = "glod.study.blog.dao.LabelDao.selectLabelByArticleId"))
+    })
     List<Article> selectAllArticles();
 
     /**
-     * 通过用户id查询文章
+     * 通过用户名查询文章
      * @param username 用户名
      * @return 文章信息
      */
-    @Select("select * from article where id in (select id from userinfo where username like #{username})")
+    @Select("select * from t_article where username like #{username}")
+    @Results({
+            @Result(property = "id", column = "id"),
+            @Result(property = "labelList", column = "id", javaType = List.class, many = @Many(select = "glod.study.blog.dao.LabelDao.selectLabelByArticleId"))
+    })
     List<Article> selectArticleByUsername(String username);
 
     /**
@@ -35,7 +44,11 @@ public interface ArticleDao {
      * @param tittle 文章标题
      * @return 文章信息
      */
-    @Select("select * from article where tittle like #{tittle}")
+    @Select("select * from t_article where tittle like #{tittle}")
+    @Results({
+            @Result(property = "id", column = "id"),
+            @Result(property = "labelList", column = "id", javaType = List.class, many = @Many(select = "glod.study.blog.dao.LabelDao.selectLabelByArticleId"))
+    })
     List<Article> selectArticleByTittle(String tittle);
 
     /**
@@ -43,7 +56,11 @@ public interface ArticleDao {
      * @param content 文章内容
      * @return 文章信息
      */
-    @Select("select * from article where content like #{content}")
+    @Select("select * from t_article where content like #{content}")
+    @Results({
+            @Result(property = "id", column = "id"),
+            @Result(property = "labelList", column = "id", javaType = List.class, many = @Many(select = "glod.study.blog.dao.LabelDao.selectLabelByArticleId"))
+    })
     List<Article> selectArticleByContent(String content);
 
 
@@ -52,10 +69,8 @@ public interface ArticleDao {
      * @param labelName 标签名
      * @return 文章信息
      */
-    @Select("select * from article where id in (" +
-            "select article_id from article_label where label_id in (" +
-            "select id from labels where name like #{name}" +
-            "))")
+    @Select("select * from t_article where id in (" +
+            "select article_id from t_article_label where label_name like #{labelName})")
     List<Article> selectArticleByLabelsName(String labelName);
 
     /**
@@ -63,9 +78,10 @@ public interface ArticleDao {
      * @param sortName 类别名称
      * @return 文章信息
      */
-    @Select("select * from article where id in (" +
-            "select article_id from article_sort where sort_id in (" +
-            "select id from sort where name like #{sortName}" +
-            "))")
+    @Select("select * from t_article where sort_name like #{sortName}")
+    @Results({
+            @Result(property = "id", column = "id"),
+            @Result(property = "labelList", column = "id", javaType = List.class, many = @Many(select = "glod.study.blog.dao.LabelDao.selectLabelByArticleId"))
+    })
     List<Article> selectArticleBySortName(String sortName);
 }

@@ -20,7 +20,7 @@ public interface UserInfoDao {
      * @return 所有用户信息
      * @throws Exception 异常
      */
-    @Select("select * from userinfo")
+    @Select("select * from t_userinfo")
     List<UserInfo> selectAllUserInfo() throws Exception;
 
     /**
@@ -28,42 +28,34 @@ public interface UserInfoDao {
      * @param userInfo 用户信息
      * @throws Exception 异常
      */
-    @Insert("insert into userinfo values(#{id}, #{ip}, #{username}, #{password}, #{email}, #{profilePhoto}, #{registrationTime}, #{birthday}, #{age}, #{nikeName})")
+    @Insert("insert into t_userinfo(username, password, token, email, phone, birthday, age, avatar, ip, registration_time) values(#{username}, #{password}, #{token}, #{email}, #{phone}, #{birthday}, #{age}, #{avatar}, #{ip}, #{registrationTime})")
     void insertUserInfo(UserInfo userInfo) throws Exception;
 
     /**
-     * 通过id删除用户
-     * @param id 用户id
+     * 通过用户名删除用户
+     * @param username 用户名
      * @throws Exception 异常
      */
-    @Delete("delete * from userinfo where id = #{id}")
-    void deleteUserInfo(Integer id) throws Exception;
+    @Delete("delete * from t_userinfo where id = #{username}")
+    void deleteUserInfo(String username) throws Exception;
 
     /**
      * 添加用户角色
-     * @param userId 用户id
-     * @param roleId 角色id
+     * @param username 用户名
+     * @param roleName 角色名
      */
-    @Insert("insert into user_role values(#{userId}, #{roleId})")
-    void insertUserInfoAndRole(@Param("userId") String userId, @Param("roleId") String roleId);
+    @Insert("insert into t_userinfo_role values(#{username}, #{roleName})")
+    void insertUserInfoAndRole(@Param("username") String username, @Param("roleName") String roleName);
 
     /**
      * 通过用户名查询用户信息
      * @param username 用户名
      * @return 用户信息
      */
-    @Select("select * from userinfo where username = #{username}")
+    @Select("select * from t_userinfo where username = #{username}")
     @Results({
-            @Result(id = true, property = "id", column = "id"),
-            @Result(property = "username", column = "username"),
-            @Result(property = "password", column = "password"),
-            @Result(property = "email", column = "email"),
-            @Result(property = "age", column = "age"),
-            @Result(property = "profilePhoto", column = "profile_photo"),
-            @Result(property = "birthday", column = "birthday"),
-            @Result(property = "registrationTime", column = "registration_time"),
-            @Result(property = "nikeName", column = "nike_name"),
-            @Result(property = "roleList", column = "id", javaType = List.class, many = @Many(select = "glod.study.blog.dao.RoleDao.selectRoleByUserId")),
+            @Result(id = true, property = "username", column = "username"),
+            @Result(property = "roleList", column = "username", javaType = List.class, many = @Many(select = "glod.study.blog.dao.RoleDao.selectRoleByUsername")),
             @Result(property = "articleList", column = "username", javaType = List.class, many = @Many(select = "glod.study.blog.dao.ArticleDao.selectArticleByUsername"))
     })
     UserInfo selectUserInfoByUsername(String username);
@@ -73,14 +65,7 @@ public interface UserInfoDao {
      * @param username 用户名
      * @param email 邮箱
      */
-    @Update("update userinfo set email = #{email} where username = #{username}")
+    @Update("update t_userinfo set email = #{email} where username = #{username}")
     void updateUserInfoEmailByUsername(@PathParam("username") String username,@PathParam("email") String email);
 
-    /**
-     * 通过id查询用户
-     * @param id 用户id
-     * @return 用户信息
-     */
-    @Select("select * from userinfo where id = #{id}")
-    UserInfo selectUserInfoById(String id);
 }
